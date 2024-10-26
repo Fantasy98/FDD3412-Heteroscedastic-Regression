@@ -583,7 +583,7 @@ if __name__ == '__main__':
     parser.add_argument('--device', default='cpu', choices=['cpu', 'cuda'])
     parser.add_argument('--data_root', default='data/')
     parser.add_argument('--download_data', default=False, action=argparse.BooleanOptionalAction)
-    parser.add_argument('--use_wandb', default=False, action=argparse.BooleanOptionalAction)
+    parser.add_argument('--use_wandb', default=True, action=argparse.BooleanOptionalAction)
     parser.add_argument('--config', nargs='+')
     parser.add_argument('--vi-prior-mu', default=0.0, type=float)
     parser.add_argument('--vi-posterior-mu-init', default=0.0, type=float)
@@ -620,6 +620,10 @@ if __name__ == '__main__':
         if 'betanll' in args['method']:
             config['method_name'] += f'-beta={args["beta"]}'
         load_dotenv()
-        wandb.init(project='image-regression-final', entity='hetreg',
-                   mode='online', config=config, name=run_name, tags=tags)
+
+        #NOTE: Modify the setup to create the project!
+        wandb.init(project='fdd3412-project', 
+                #    entity='hetreg',
+                #    mode='online', 
+                   config=config, name=run_name, tags=tags)
     main(**args)
