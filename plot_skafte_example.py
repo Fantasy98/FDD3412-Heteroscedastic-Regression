@@ -32,11 +32,14 @@ n_epochs_burnin = 100
 prior_prec_init = 1e-3
 use_wandb = False
 
+
 ds_train = Skafte(n_samples=n_samples, double=True)
 train_loader = TensorDataLoader(ds_train.data.to(device), ds_train.targets.to(device), batch_size=-1)
 xl, xr = ds_train.x_bounds
 offset = 3
 x = torch.linspace(xl-offset, xr+offset, 1000).to(device).double().unsqueeze(-1)
+print(f"Load DATA")
+
 
 # Homoscedastic
 model = MLP(1, 100, 1, output_size=1, activation='tanh', head=None).to(device).double()
@@ -51,6 +54,7 @@ f_mu, f_var = f_mu.squeeze(), f_var.squeeze()
 m_map, s_map = f_mu.numpy(), 2 * torch.ones_like(f_mu).numpy() * la.sigma_noise.item()
 m_bayes, s_bayes = f_mu.numpy(), 2 * np.sqrt(f_var.numpy() + la.sigma_noise.item()**2)
 s_emp = 2 * np.sqrt(f_var.numpy())
+print('Homoscedastic Model Trained!')
 
 # Heteroscedastic
 model = MLP(1, 100, 1, output_size=2, activation='tanh', head='natural', head_activation='softplus').to(device).double()
@@ -60,11 +64,16 @@ la, model, margliksh, _, _ = marglik_optimization(
     laplace=laplace, prior_structure='layerwise', backend=backend, n_epochs_burnin=n_epochs_burnin,
     scheduler='cos', optimizer=optimizer, prior_prec_init=prior_prec_init, use_wandb=use_wandb
 )
+print(f"Heteroscedastic Model Trained!")
+
+
+
 plt.plot(margliks, label='homoscedastic')
 plt.plot(margliksh, label='heteroscedastic')
 plt.ylabel('log marginal likelihood')
 plt.legend()
-plt.show()
+# plt.show()
+plt.savefig('figures/illustration.jpg')
 f_mu, f_var, y_var = la(x)
 f_mu, f_var, y_var = f_mu.squeeze(), f_var.squeeze(), y_var.squeeze()
 mh_map, sh_map = f_mu.numpy(), 2 * np.sqrt(y_var.numpy())
@@ -72,6 +81,7 @@ mh_bayes, sh_bayes = f_mu.numpy(), 2 * np.sqrt(f_var.numpy() + y_var.numpy())
 sh_emp = 2 * np.sqrt(f_var.numpy())
 
 
+print(f"Plot Results")
 f, s = ds_train.ground_truth(x)
 with plt.rc_context(bundles.jmlr2001(ncols=4, rel_width=1.777)):
     size = figsizes.jmlr2001(ncols=4, rel_width=1.2, height_to_width_ratio=0.8)['figure.figsize']
@@ -111,5 +121,6 @@ with plt.rc_context(bundles.jmlr2001(ncols=4, rel_width=1.777)):
     axs[3].fill_between(x.squeeze(), mh_bayes + sh_emp, mh_bayes + sh_bayes, color='tab:orange', alpha=0.3)
     handles, labels = ax.get_legend_handles_labels()
     fig.legend(handles, labels, bbox_to_anchor =(0.5, -0.2), loc='lower center', ncol=4)
-    plt.savefig('figures/illustration.pdf')
-    plt.show()
+    # plt.savefig('figures/illustration.pdf')
+    plt.savefig('figures/illustration_YW.pdf')
+    # plt.show()
