@@ -38,3 +38,8 @@ Alternatively, an example is shown in `plot_skafte_example.py` for the toy examp
 Both rely on the corresponding scripts `run_image_regression.py` and `run_uci_crispr_egression.py` to be run and save results to wandb.
 The result tables can then be obtained by aggregation on the wandb frontend or downloading results from the API.
 For the CRISPR-Cas-13 datasets we use, we are thankful to the authors of [previous work](https://proceedings.mlr.press/v206/stirn23a/stirn23a.pdf) for having shared the datasets.
+
+## Updated-Features: 
+### YW: 
++ Update the requirement for installation. 
++ Adjust the arguments for running the case. 

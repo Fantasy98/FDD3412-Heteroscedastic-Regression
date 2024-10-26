@@ -17,3 +17,4 @@ model: mlp
 optimizer: SGD
 lr: 0.1
 double: False
+use_wandb: False

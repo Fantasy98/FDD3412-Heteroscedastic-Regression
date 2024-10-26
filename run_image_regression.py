@@ -583,7 +583,7 @@ if __name__ == '__main__':
     parser.add_argument('--device', default='cpu', choices=['cpu', 'cuda'])
     parser.add_argument('--data_root', default='data/')
     parser.add_argument('--download_data', default=False, action=argparse.BooleanOptionalAction)
-    parser.add_argument('--use_wandb', default=True, action=argparse.BooleanOptionalAction)
+    parser.add_argument('--use_wandb', default=False, action=argparse.BooleanOptionalAction)
     parser.add_argument('--config', nargs='+')
     parser.add_argument('--vi-prior-mu', default=0.0, type=float)
     parser.add_argument('--vi-posterior-mu-init', default=0.0, type=float)

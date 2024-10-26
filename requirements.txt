@@ -6,3 +6,6 @@ scikit-learn
 wandb
 bayesian-torch
 blitz-bayesian-pytorch
+matplotlib 
+tuplots
+python-dotenv
