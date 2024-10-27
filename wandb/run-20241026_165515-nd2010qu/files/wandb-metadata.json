@@ -1,0 +1,72 @@
+{
+  "os":  "Linux-6.1.0-25-amd64-x86_64-with-glibc2.36",
+  "python":  "3.9.12",
+  "startedAt":  "2024-10-26T14:55:15.551954Z",
+  "args":  [
+    "--device",
+    "cuda",
+    "--use_wandb",
+    "--lr",
+    "1e-1",
+    "--lr_min",
+    "1e-4",
+    "--optimizer",
+    "SGD"
+  ],
+  "program":  "/scratch/yuningw/courseKTH/adv_dl_dff3412/project/heteroscedastic-nn/run_image_regression.py",
+  "codePath":  "run_image_regression.py",
+  "git":  {
+    "remote":  "git@github.com:Fantasy98/FDD3412-Heteroscedastic-Regression.git",
+    "commit":  "32d0f2a0b0d6c74c18157ad172c549832ac6c143"
+  },
+  "email":  "yuningw@kth.se",
+  "root":  "/scratch/yuningw/courseKTH/adv_dl_dff3412/project/heteroscedastic-nn",
+  "host":  "neptune",
+  "username":  "yuningw",
+  "executable":  "/scratch/yuningw/anaconda3/envs/bnn/bin/python",
+  "codePathLocal":  "run_image_regression.py",
+  "cpu_count":  48,
+  "cpu_count_logical":  96,
+  "gpu":  "NVIDIA GeForce RTX 2080 Ti",
+  "gpu_count":  4,
+  "disk":  {
+    "/":  {
+      "total":  "63090503680",
+      "used":  "43333251072"
+    }
+  },
+  "memory":  {
+    "total":  "404271435776"
+  },
+  "cpu":  {
+    "count":  48,
+    "countLogical":  96
+  },
+  "gpu_nvidia":  [
+    {
+      "name":  "NVIDIA GeForce RTX 2080 Ti",
+      "memoryTotal":  "11811160064",
+      "cudaCores":  4352,
+      "architecture":  "Turing"
+    },
+    {
+      "name":  "NVIDIA GeForce RTX 2080 Ti",
+      "memoryTotal":  "11811160064",
+      "cudaCores":  4352,
+      "architecture":  "Turing"
+    },
+    {
+      "name":  "NVIDIA GeForce RTX 2080 Ti",
+      "memoryTotal":  "11811160064",
+      "cudaCores":  4352,
+      "architecture":  "Turing"
+    },
+    {
+      "name":  "NVIDIA GeForce RTX 2080 Ti",
+      "memoryTotal":  "11811160064",
+      "cudaCores":  4352,
+      "architecture":  "Turing"
+    }
+  ],
+  "cudaVersion":  "12.2"
+}

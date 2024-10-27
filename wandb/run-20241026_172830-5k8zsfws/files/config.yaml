@@ -1,0 +1,129 @@
+_wandb:
+    value:
+        cli_version: 0.18.5
+        m:
+            - "1": predictive_natural
+              "6":
+                - 3
+              "7":
+                - 3
+            - "1": predictive_mean
+              "6":
+                - 3
+              "7":
+                - 3
+            - "1": predictive_mc
+              "6":
+                - 3
+              "7":
+                - 3
+            - "1": predictive
+              "6":
+                - 3
+              "7":
+                - 3
+        python_version: 3.9.12
+        t:
+            "1":
+                - 1
+                - 5
+                - 41
+                - 53
+                - 55
+            "2":
+                - 1
+                - 5
+                - 41
+                - 53
+                - 55
+            "3":
+                - 2
+                - 7
+                - 13
+                - 15
+                - 16
+                - 23
+                - 55
+                - 61
+                - 62
+                - 63
+            "4": 3.9.12
+            "5": 0.18.5
+            "8":
+                - 5
+            "12": 0.18.5
+            "13": linux-x86_64
+activation:
+    value: relu
+approx:
+    value: kron
+batch_size:
+    value: 512
+beta:
+    value: 0
+data_root:
+    value: data/
+dataset:
+    value: fmnist
+device:
+    value: cuda
+double:
+    value: true
+download_data:
+    value: false
+head:
+    value: natural
+head_activation:
+    value: softplus
+het_noise:
+    value: label
+likelihood:
+    value: heteroscedastic
+lr:
+    value: 0.1
+lr_hyp:
+    value: 0.1
+lr_hyp_min:
+    value: 0.1
+lr_min:
+    value: 0.0001
+marglik_early_stopping:
+    value: true
+marglik_frequency:
+    value: 10
+method:
+    value: map
+method_name:
+    value: map-het-natural
+model:
+    value: cnn
+n_data:
+    value: 60000
+n_epochs:
+    value: 300
+n_epochs_burnin:
+    value: 301
+n_epochs_val:
+    value: 300
+n_hypersteps:
+    value: 50
+n_param_groups:
+    value: 12
+n_params:
+    value: 248254
+optimizer:
+    value: SGD
+prior_prec_init:
+    value: 1
+seed:
+    value: 7
+typeofrep:
+    value: Flipout
+use_wandb:
+    value: true
+vi_posterior_mu_init:
+    value: 0
+vi_posterior_rho_init:
+    value: -3
+vi_prior_mu:
+    value: 0

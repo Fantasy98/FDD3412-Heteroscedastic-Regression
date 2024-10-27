@@ -18,6 +18,10 @@ from hetreg.image_datasets import IMAGE_DATASETS, get_dataset
 from hetreg.models import MLP, ACTIVATIONS, HEADS, LeNet, ResNet, ResNetFaithful, MLPFaithful, LeNetFaithful, NaturalReparamHead, make_bayesian, LeNetMCDrpt
 from hetreg.betanll import betalik_optimization, faithful_optimization, vi_optimization, enable_dropout, mcdropout_optimization
 
+#NOTE: Visible cuda
+import os 
+os.environ["CUDA_VISIBLE_DEVICES"]="2"
+
 
 def main(seed, model, dataset, head, lr, lr_min, n_epochs, batch_size, method, beta, likelihood,
          prior_prec_init, approx, lr_hyp, lr_hyp_min, n_epochs_burnin, marglik_frequency, n_hypersteps,
@@ -45,6 +49,8 @@ def main(seed, model, dataset, head, lr, lr_min, n_epochs, batch_size, method, b
     if double:
         x_test, y_test = x_test.double(), y_test.double()
     test_loader = TensorDataLoader(x_test, y_test, batch_size=batch_size, shuffle=False)
+
+    print('[DATA] DataLoader READY',flush=True)
 
     # Set up model.
     output_size = 1 if likelihood == 'homoscedastic' else 2
@@ -94,6 +100,8 @@ def main(seed, model, dataset, head, lr, lr_min, n_epochs, batch_size, method, b
             model = model.double()
     else:
         model_name_for_vi = model
+
+    print('[MODEL] READY',flush=True)
 
 
     test_loglik_bayes = None
@@ -565,7 +573,7 @@ if __name__ == '__main__':
     parser.add_argument('--lr_min', default=1e-6, type=float, help='Cosine decay target')
     parser.add_argument('--n_epochs', default=300, type=int)
     parser.add_argument('--n_epochs_val', default=None, type=int)
-    parser.add_argument('--batch_size', default=128, type=int)
+    parser.add_argument('--batch_size', default=512, type=int)
     parser.add_argument('--optimizer', default='Adam', help='Optimizer', choices=['Adam', 'SGD'])
     parser.add_argument('--method', default='map', help='Method', choices=['map', 'marglik', 'betanll', 'faithful', 'vi', 'mcdropout'])
     parser.add_argument('--beta', default=0.5, type=float)
@@ -622,8 +630,12 @@ if __name__ == '__main__':
         load_dotenv()
 
         #NOTE: Modify the setup to create the project!
-        wandb.init(project='fdd3412-project', 
-                #    entity='hetreg',
-                #    mode='online', 
-                   config=config, name=run_name, tags=tags)
-    main(**args)
+        # wandb.init(project='fdd3412-project', 
+                    # entity='yuningw',
+                    # mode='online', 
+                    # config=config, name=run_name, tags=tags)
+        with wandb.init(project='fdd3412-project', 
+                    # entity='yuningw',
+                    mode='online', 
+                    config=config, name=run_name, tags=tags):
+            main(**args)
