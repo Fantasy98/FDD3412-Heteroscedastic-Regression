@@ -51,7 +51,7 @@ def run_program(base_cmd, args):
 seeds = [189,711]
 heads = ['natural', 'meanvar']
 # MNIST and FMNIST
-datasets = ['minst','fmnist','cifar10']
+datasets = ['mnist','fmnist','cifar10']
 het_flags = ['--het_noise label', '--het_noise rotation', '--het_noise neither']
 for seed, dataset, hf in product(seeds, datasets, het_flags):
     base_cmd = f'python run_image_regression.py --seed {seed} --config configs/{dataset}.yaml {hf}'
