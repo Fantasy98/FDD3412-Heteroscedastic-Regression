@@ -1,0 +1,5 @@
+backpack-for-pytorch
+scikit-learn
+wandb
+bayesian-torch
+blitz-bayesian-pytorch
