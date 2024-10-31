@@ -1,0 +1,44 @@
+{
+  "os":  "Linux-6.1.0-26-amd64-x86_64-with-glibc2.36",
+  "python":  "3.9.12",
+  "startedAt":  "2024-10-31T07:26:28.006830Z",
+  "args":  [
+    "--seed",
+    "1",
+    "--dataset",
+    "flow-cytometry-HEK293",
+    "--config",
+    "configs/crispr.yaml",
+    "--likelihood",
+    "homoscedastic",
+    "--method",
+    "marglik"
+  ],
+  "program":  "/scratch/yuningw/courseKTH/adv_dl_dff3412/project/heteroscedastic-nn/run_uci_crispr_regression.py",
+  "codePath":  "run_uci_crispr_regression.py",
+  "git":  {
+    "remote":  "git@github.com:Fantasy98/FDD3412-Heteroscedastic-Regression.git",
+    "commit":  "0977a6605a795df5b0c38589c96f86f12e030b6c"
+  },
+  "email":  "yuningw@kth.se",
+  "root":  "/scratch/yuningw/courseKTH/adv_dl_dff3412/project/heteroscedastic-nn",
+  "host":  "melbourne",
+  "username":  "yuningw",
+  "executable":  "/scratch/yuningw/anaconda3/envs/bnn/bin/python",
+  "codePathLocal":  "run_uci_crispr_regression.py",
+  "cpu_count":  16,
+  "cpu_count_logical":  32,
+  "disk":  {
+    "/":  {
+      "total":  "63090663424",
+      "used":  "33387827200"
+    }
+  },
+  "memory":  {
+    "total":  "134229168128"
+  },
+  "cpu":  {
+    "count":  16,
+    "countLogical":  32
+  }
+}
