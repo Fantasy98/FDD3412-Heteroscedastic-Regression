@@ -622,7 +622,7 @@ if __name__ == '__main__':
         load_dotenv()
 
         #NOTE: Modify the setup to create the project!
-        wandb.init(project='image-regression', 
+        wandb.init(project='fdd3412-image-regression', 
                 #    entity='hetreg',
                 #    mode='online', 
                    config=config, name=run_name, tags=tags)

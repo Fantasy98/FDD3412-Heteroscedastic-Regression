@@ -544,7 +544,7 @@ if __name__ == '__main__':
         run_name = '-'.join(tags)
         run_name += '-' + str(uuid.uuid5(uuid.NAMESPACE_DNS, str(args)))[:4]
         load_dotenv()
-        wandb.init(project='uci-experiments',
+        wandb.init(project='fdd3412-uci-crispr-experiments',
                    mode='online', config=config, name=run_name, tags=tags)
                    # dir=args['wandbdirspec'])
     # args.pop('wandbdirspec')

@@ -1,0 +1,1 @@
+python run_uci_crispr_regression.py --seed 1 --dataset flow-cytometry-HEK293 --config configs/crispr.yaml --likelihood homoscedastic --method map
