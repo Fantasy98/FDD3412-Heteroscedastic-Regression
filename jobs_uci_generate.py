@@ -5,7 +5,7 @@ from itertools import product
 # Path to the restart file and executed commands file
 # Define a function to check if a command was already executed
 def use_command(command):
-    restart_file = 'restart-crispr.dat'
+    restart_file = 'restart-uci.dat'
     # Load previously executed commands from restart_file if it exists
     if os.path.exists(restart_file):
         with open(restart_file, 'r') as f:
@@ -19,16 +19,13 @@ def use_command(command):
     if command in executed_commands:
         print(f"Skipping already executed command: {command}")
         return False  # Command was found, so skip it
-    
     # Command was not executed, so execute it and record it
     print(f"Executing command: {command}")
     # Uncomment the following line to actually execute
     # os.system(command)
-
     # Record command as executed by appending it to the file
     with open(restart_file, 'a') as f:
         f.write(command + '\n')
-    
     return True  # Command was new, so execute it
 
 def run_program(base_cmd, args):
@@ -45,38 +42,52 @@ def run_program(base_cmd, args):
 
 
 
-CRISPR_DATASETS = [
-    'flow-cytometry-HEK293', 
-    'survival-screen-A375', 
-    'survival-screen-HEK293'
+UCI_DATASETS = [
+    'boston-housing', 'concrete', 'energy', 'kin8nm','naval-propulsion-plant',
+    'power-plant', 'wine-quality-red', 'yacht'
 ]
-#YW: Reduce the seed number to make the training lighter
-#NOTE: n_case * n_data * n_seed = 11 * 3 * 3 = 99! Assume at most 1hr per case, then it cost 4 days! 
-seeds = [seed for seed in range(1,11,4)]
+
+# seeds = [seed for seed in range(1, 21)]
+# YW: Reduce the n_seed to use 
+seeds = [seed for seed in range(1, 21, 5)]
+# NOTE: n_case * n_data * n_seed = 11 * 8 * 4 = 352!
+print(f"[JOB] SEED LIST:{seeds}")
 heads = ['natural', 'meanvar']
-for seed, dataset in product(seeds, CRISPR_DATASETS):
-    base_cmd = f'python run_uci_crispr_regression.py --seed {seed} --dataset {dataset} --config configs/crispr.yaml'
+for seed, dataset in product(seeds, UCI_DATASETS):
+    base_cmd = f'python run_uci_crispr_regression.py --seed {seed} --dataset {dataset} --config configs/uci.yaml'
     # homoscedastic
+    # print(base_cmd, '--likelihood homoscedastic --method map')
     run_program(base_cmd, '--likelihood homoscedastic --method map')
-
-    run_program(base_cmd, '--likelihood homoscedastic --method marglik')
-
-    # heteroscedastic
-    run_program(base_cmd,f'--likelihood heteroscedastic --method faithful --head gaussian')
     
+    # print(base_cmd, '--likelihood homoscedastic --method marglik')
+    run_program(base_cmd, '--likelihood homoscedastic --method marglik')
+    
+    # heteroscedastic
+    # print(base_cmd, f'--likelihood heteroscedastic --method faithful --head gaussian')
+    run_program(base_cmd, f'--likelihood heteroscedastic --method faithful --head gaussian')
+    
+    # print(base_cmd, f'--likelihood heteroscedastic --method betanll --head gaussian --beta 0.0')
     run_program(base_cmd, f'--likelihood heteroscedastic --method betanll --head gaussian --beta 0.0')
-
+    
+    # print(base_cmd, f'--likelihood heteroscedastic --method betanll --head gaussian --beta 0.5')
     run_program(base_cmd, f'--likelihood heteroscedastic --method betanll --head gaussian --beta 0.5')
     
+    # print(base_cmd, f'--likelihood heteroscedastic --method betanll --head gaussian --beta 1.0')
     run_program(base_cmd, f'--likelihood heteroscedastic --method betanll --head gaussian --beta 1.0')
-    
-    # Bayes (VI)
-    vi_params = '--n_epochs 500 --lr 0.001 --lr_min 0.001 --optimizer Adam'
-    run_program(base_cmd, f'--likelihood heteroscedastic --method vi {vi_params}')
+    # Bayes (MCDO, VI)
 
+    mcdo_vi_params = '--n_epochs 1000 --lr 0.001 --lr_min 0.001 --optimizer Adam'
+    # print(base_cmd, f'--likelihood heteroscedastic --method mcdropout {mcdo_vi_params}')
+    run_program(base_cmd, f'--likelihood heteroscedastic --method mcdropout {mcdo_vi_params}')
+    
+    # print(base_cmd, f'--likelihood heteroscedastic --method vi {mcdo_vi_params}')
+    run_program(base_cmd, f'--likelihood heteroscedastic --method vi {mcdo_vi_params}')
+    
     # Proposed Laplace approximation
     for head in heads:
+        # print(base_cmd, f'--likelihood heteroscedastic --method map --head {head}')
         run_program(base_cmd, f'--likelihood heteroscedastic --method map --head {head}')
+        # print(base_cmd, f'--likelihood heteroscedastic --method marglik --head {head}')
         run_program(base_cmd, f'--likelihood heteroscedastic --method marglik --head {head}')
-        
+    
 

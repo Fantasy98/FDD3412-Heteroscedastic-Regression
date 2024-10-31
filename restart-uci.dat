@@ -1,33 +1,4 @@
 python run_uci_crispr_regression.py --seed 1 --dataset flow-cytometry-HEK293 --config configs/crispr.yaml --likelihood homoscedastic --method map
-python run_uci_crispr_regression.py --seed 1 --dataset survival-screen-A375 --config configs/crispr.yaml --likelihood homoscedastic --method map
-python run_uci_crispr_regression.py --seed 1 --dataset survival-screen-HEK293 --config configs/crispr.yaml --likelihood homoscedastic --method map
-python run_uci_crispr_regression.py --seed 2 --dataset flow-cytometry-HEK293 --config configs/crispr.yaml --likelihood homoscedastic --method map
-python run_uci_crispr_regression.py --seed 2 --dataset survival-screen-A375 --config configs/crispr.yaml --likelihood homoscedastic --method map
-python run_uci_crispr_regression.py --seed 2 --dataset survival-screen-HEK293 --config configs/crispr.yaml --likelihood homoscedastic --method map
-python run_uci_crispr_regression.py --seed 3 --dataset flow-cytometry-HEK293 --config configs/crispr.yaml --likelihood homoscedastic --method map
-python run_uci_crispr_regression.py --seed 3 --dataset survival-screen-A375 --config configs/crispr.yaml --likelihood homoscedastic --method map
-python run_uci_crispr_regression.py --seed 3 --dataset survival-screen-HEK293 --config configs/crispr.yaml --likelihood homoscedastic --method map
-python run_uci_crispr_regression.py --seed 4 --dataset flow-cytometry-HEK293 --config configs/crispr.yaml --likelihood homoscedastic --method map
-python run_uci_crispr_regression.py --seed 4 --dataset survival-screen-A375 --config configs/crispr.yaml --likelihood homoscedastic --method map
-python run_uci_crispr_regression.py --seed 4 --dataset survival-screen-HEK293 --config configs/crispr.yaml --likelihood homoscedastic --method map
-python run_uci_crispr_regression.py --seed 5 --dataset flow-cytometry-HEK293 --config configs/crispr.yaml --likelihood homoscedastic --method map
-python run_uci_crispr_regression.py --seed 5 --dataset survival-screen-A375 --config configs/crispr.yaml --likelihood homoscedastic --method map
-python run_uci_crispr_regression.py --seed 5 --dataset survival-screen-HEK293 --config configs/crispr.yaml --likelihood homoscedastic --method map
-python run_uci_crispr_regression.py --seed 6 --dataset flow-cytometry-HEK293 --config configs/crispr.yaml --likelihood homoscedastic --method map
-python run_uci_crispr_regression.py --seed 6 --dataset survival-screen-A375 --config configs/crispr.yaml --likelihood homoscedastic --method map
-python run_uci_crispr_regression.py --seed 6 --dataset survival-screen-HEK293 --config configs/crispr.yaml --likelihood homoscedastic --method map
-python run_uci_crispr_regression.py --seed 7 --dataset flow-cytometry-HEK293 --config configs/crispr.yaml --likelihood homoscedastic --method map
-python run_uci_crispr_regression.py --seed 7 --dataset survival-screen-A375 --config configs/crispr.yaml --likelihood homoscedastic --method map
-python run_uci_crispr_regression.py --seed 7 --dataset survival-screen-HEK293 --config configs/crispr.yaml --likelihood homoscedastic --method map
-python run_uci_crispr_regression.py --seed 8 --dataset flow-cytometry-HEK293 --config configs/crispr.yaml --likelihood homoscedastic --method map
-python run_uci_crispr_regression.py --seed 8 --dataset survival-screen-A375 --config configs/crispr.yaml --likelihood homoscedastic --method map
-python run_uci_crispr_regression.py --seed 8 --dataset survival-screen-HEK293 --config configs/crispr.yaml --likelihood homoscedastic --method map
-python run_uci_crispr_regression.py --seed 9 --dataset flow-cytometry-HEK293 --config configs/crispr.yaml --likelihood homoscedastic --method map
-python run_uci_crispr_regression.py --seed 9 --dataset survival-screen-A375 --config configs/crispr.yaml --likelihood homoscedastic --method map
-python run_uci_crispr_regression.py --seed 9 --dataset survival-screen-HEK293 --config configs/crispr.yaml --likelihood homoscedastic --method map
-python run_uci_crispr_regression.py --seed 10 --dataset flow-cytometry-HEK293 --config configs/crispr.yaml --likelihood homoscedastic --method map
-python run_uci_crispr_regression.py --seed 10 --dataset survival-screen-A375 --config configs/crispr.yaml --likelihood homoscedastic --method map
-python run_uci_crispr_regression.py --seed 10 --dataset survival-screen-HEK293 --config configs/crispr.yaml --likelihood homoscedastic --method map
 python run_uci_crispr_regression.py --seed 1 --dataset flow-cytometry-HEK293 --config configs/crispr.yaml --likelihood homoscedastic --method marglik
 python run_uci_crispr_regression.py --seed 1 --dataset flow-cytometry-HEK293 --config configs/crispr.yaml --likelihood heteroscedastic --method faithful --head gaussian
 python run_uci_crispr_regression.py --seed 1 --dataset flow-cytometry-HEK293 --config configs/crispr.yaml --likelihood heteroscedastic --method betanll --head gaussian --beta 0.0
@@ -38,6 +9,7 @@ python run_uci_crispr_regression.py --seed 1 --dataset flow-cytometry-HEK293 --c
 python run_uci_crispr_regression.py --seed 1 --dataset flow-cytometry-HEK293 --config configs/crispr.yaml --likelihood heteroscedastic --method marglik --head natural
 python run_uci_crispr_regression.py --seed 1 --dataset flow-cytometry-HEK293 --config configs/crispr.yaml --likelihood heteroscedastic --method map --head meanvar
 python run_uci_crispr_regression.py --seed 1 --dataset flow-cytometry-HEK293 --config configs/crispr.yaml --likelihood heteroscedastic --method marglik --head meanvar
+python run_uci_crispr_regression.py --seed 1 --dataset survival-screen-A375 --config configs/crispr.yaml --likelihood homoscedastic --method map
 python run_uci_crispr_regression.py --seed 1 --dataset survival-screen-A375 --config configs/crispr.yaml --likelihood homoscedastic --method marglik
 python run_uci_crispr_regression.py --seed 1 --dataset survival-screen-A375 --config configs/crispr.yaml --likelihood heteroscedastic --method faithful --head gaussian
 python run_uci_crispr_regression.py --seed 1 --dataset survival-screen-A375 --config configs/crispr.yaml --likelihood heteroscedastic --method betanll --head gaussian --beta 0.0
@@ -48,6 +20,7 @@ python run_uci_crispr_regression.py --seed 1 --dataset survival-screen-A375 --co
 python run_uci_crispr_regression.py --seed 1 --dataset survival-screen-A375 --config configs/crispr.yaml --likelihood heteroscedastic --method marglik --head natural
 python run_uci_crispr_regression.py --seed 1 --dataset survival-screen-A375 --config configs/crispr.yaml --likelihood heteroscedastic --method map --head meanvar
 python run_uci_crispr_regression.py --seed 1 --dataset survival-screen-A375 --config configs/crispr.yaml --likelihood heteroscedastic --method marglik --head meanvar
+python run_uci_crispr_regression.py --seed 1 --dataset survival-screen-HEK293 --config configs/crispr.yaml --likelihood homoscedastic --method map
 python run_uci_crispr_regression.py --seed 1 --dataset survival-screen-HEK293 --config configs/crispr.yaml --likelihood homoscedastic --method marglik
 python run_uci_crispr_regression.py --seed 1 --dataset survival-screen-HEK293 --config configs/crispr.yaml --likelihood heteroscedastic --method faithful --head gaussian
 python run_uci_crispr_regression.py --seed 1 --dataset survival-screen-HEK293 --config configs/crispr.yaml --likelihood heteroscedastic --method betanll --head gaussian --beta 0.0
@@ -58,6 +31,7 @@ python run_uci_crispr_regression.py --seed 1 --dataset survival-screen-HEK293 --
 python run_uci_crispr_regression.py --seed 1 --dataset survival-screen-HEK293 --config configs/crispr.yaml --likelihood heteroscedastic --method marglik --head natural
 python run_uci_crispr_regression.py --seed 1 --dataset survival-screen-HEK293 --config configs/crispr.yaml --likelihood heteroscedastic --method map --head meanvar
 python run_uci_crispr_regression.py --seed 1 --dataset survival-screen-HEK293 --config configs/crispr.yaml --likelihood heteroscedastic --method marglik --head meanvar
+python run_uci_crispr_regression.py --seed 2 --dataset flow-cytometry-HEK293 --config configs/crispr.yaml --likelihood homoscedastic --method map
 python run_uci_crispr_regression.py --seed 2 --dataset flow-cytometry-HEK293 --config configs/crispr.yaml --likelihood homoscedastic --method marglik
 python run_uci_crispr_regression.py --seed 2 --dataset flow-cytometry-HEK293 --config configs/crispr.yaml --likelihood heteroscedastic --method faithful --head gaussian
 python run_uci_crispr_regression.py --seed 2 --dataset flow-cytometry-HEK293 --config configs/crispr.yaml --likelihood heteroscedastic --method betanll --head gaussian --beta 0.0
@@ -68,6 +42,7 @@ python run_uci_crispr_regression.py --seed 2 --dataset flow-cytometry-HEK293 --c
 python run_uci_crispr_regression.py --seed 2 --dataset flow-cytometry-HEK293 --config configs/crispr.yaml --likelihood heteroscedastic --method marglik --head natural
 python run_uci_crispr_regression.py --seed 2 --dataset flow-cytometry-HEK293 --config configs/crispr.yaml --likelihood heteroscedastic --method map --head meanvar
 python run_uci_crispr_regression.py --seed 2 --dataset flow-cytometry-HEK293 --config configs/crispr.yaml --likelihood heteroscedastic --method marglik --head meanvar
+python run_uci_crispr_regression.py --seed 2 --dataset survival-screen-A375 --config configs/crispr.yaml --likelihood homoscedastic --method map
 python run_uci_crispr_regression.py --seed 2 --dataset survival-screen-A375 --config configs/crispr.yaml --likelihood homoscedastic --method marglik
 python run_uci_crispr_regression.py --seed 2 --dataset survival-screen-A375 --config configs/crispr.yaml --likelihood heteroscedastic --method faithful --head gaussian
 python run_uci_crispr_regression.py --seed 2 --dataset survival-screen-A375 --config configs/crispr.yaml --likelihood heteroscedastic --method betanll --head gaussian --beta 0.0
@@ -78,6 +53,7 @@ python run_uci_crispr_regression.py --seed 2 --dataset survival-screen-A375 --co
 python run_uci_crispr_regression.py --seed 2 --dataset survival-screen-A375 --config configs/crispr.yaml --likelihood heteroscedastic --method marglik --head natural
 python run_uci_crispr_regression.py --seed 2 --dataset survival-screen-A375 --config configs/crispr.yaml --likelihood heteroscedastic --method map --head meanvar
 python run_uci_crispr_regression.py --seed 2 --dataset survival-screen-A375 --config configs/crispr.yaml --likelihood heteroscedastic --method marglik --head meanvar
+python run_uci_crispr_regression.py --seed 2 --dataset survival-screen-HEK293 --config configs/crispr.yaml --likelihood homoscedastic --method map
 python run_uci_crispr_regression.py --seed 2 --dataset survival-screen-HEK293 --config configs/crispr.yaml --likelihood homoscedastic --method marglik
 python run_uci_crispr_regression.py --seed 2 --dataset survival-screen-HEK293 --config configs/crispr.yaml --likelihood heteroscedastic --method faithful --head gaussian
 python run_uci_crispr_regression.py --seed 2 --dataset survival-screen-HEK293 --config configs/crispr.yaml --likelihood heteroscedastic --method betanll --head gaussian --beta 0.0
@@ -88,6 +64,7 @@ python run_uci_crispr_regression.py --seed 2 --dataset survival-screen-HEK293 --
 python run_uci_crispr_regression.py --seed 2 --dataset survival-screen-HEK293 --config configs/crispr.yaml --likelihood heteroscedastic --method marglik --head natural
 python run_uci_crispr_regression.py --seed 2 --dataset survival-screen-HEK293 --config configs/crispr.yaml --likelihood heteroscedastic --method map --head meanvar
 python run_uci_crispr_regression.py --seed 2 --dataset survival-screen-HEK293 --config configs/crispr.yaml --likelihood heteroscedastic --method marglik --head meanvar
+python run_uci_crispr_regression.py --seed 3 --dataset flow-cytometry-HEK293 --config configs/crispr.yaml --likelihood homoscedastic --method map
 python run_uci_crispr_regression.py --seed 3 --dataset flow-cytometry-HEK293 --config configs/crispr.yaml --likelihood homoscedastic --method marglik
 python run_uci_crispr_regression.py --seed 3 --dataset flow-cytometry-HEK293 --config configs/crispr.yaml --likelihood heteroscedastic --method faithful --head gaussian
 python run_uci_crispr_regression.py --seed 3 --dataset flow-cytometry-HEK293 --config configs/crispr.yaml --likelihood heteroscedastic --method betanll --head gaussian --beta 0.0
@@ -98,6 +75,7 @@ python run_uci_crispr_regression.py --seed 3 --dataset flow-cytometry-HEK293 --c
 python run_uci_crispr_regression.py --seed 3 --dataset flow-cytometry-HEK293 --config configs/crispr.yaml --likelihood heteroscedastic --method marglik --head natural
 python run_uci_crispr_regression.py --seed 3 --dataset flow-cytometry-HEK293 --config configs/crispr.yaml --likelihood heteroscedastic --method map --head meanvar
 python run_uci_crispr_regression.py --seed 3 --dataset flow-cytometry-HEK293 --config configs/crispr.yaml --likelihood heteroscedastic --method marglik --head meanvar
+python run_uci_crispr_regression.py --seed 3 --dataset survival-screen-A375 --config configs/crispr.yaml --likelihood homoscedastic --method map
 python run_uci_crispr_regression.py --seed 3 --dataset survival-screen-A375 --config configs/crispr.yaml --likelihood homoscedastic --method marglik
 python run_uci_crispr_regression.py --seed 3 --dataset survival-screen-A375 --config configs/crispr.yaml --likelihood heteroscedastic --method faithful --head gaussian
 python run_uci_crispr_regression.py --seed 3 --dataset survival-screen-A375 --config configs/crispr.yaml --likelihood heteroscedastic --method betanll --head gaussian --beta 0.0
@@ -108,6 +86,7 @@ python run_uci_crispr_regression.py --seed 3 --dataset survival-screen-A375 --co
 python run_uci_crispr_regression.py --seed 3 --dataset survival-screen-A375 --config configs/crispr.yaml --likelihood heteroscedastic --method marglik --head natural
 python run_uci_crispr_regression.py --seed 3 --dataset survival-screen-A375 --config configs/crispr.yaml --likelihood heteroscedastic --method map --head meanvar
 python run_uci_crispr_regression.py --seed 3 --dataset survival-screen-A375 --config configs/crispr.yaml --likelihood heteroscedastic --method marglik --head meanvar
+python run_uci_crispr_regression.py --seed 3 --dataset survival-screen-HEK293 --config configs/crispr.yaml --likelihood homoscedastic --method map
 python run_uci_crispr_regression.py --seed 3 --dataset survival-screen-HEK293 --config configs/crispr.yaml --likelihood homoscedastic --method marglik
 python run_uci_crispr_regression.py --seed 3 --dataset survival-screen-HEK293 --config configs/crispr.yaml --likelihood heteroscedastic --method faithful --head gaussian
 python run_uci_crispr_regression.py --seed 3 --dataset survival-screen-HEK293 --config configs/crispr.yaml --likelihood heteroscedastic --method betanll --head gaussian --beta 0.0
@@ -118,6 +97,7 @@ python run_uci_crispr_regression.py --seed 3 --dataset survival-screen-HEK293 --
 python run_uci_crispr_regression.py --seed 3 --dataset survival-screen-HEK293 --config configs/crispr.yaml --likelihood heteroscedastic --method marglik --head natural
 python run_uci_crispr_regression.py --seed 3 --dataset survival-screen-HEK293 --config configs/crispr.yaml --likelihood heteroscedastic --method map --head meanvar
 python run_uci_crispr_regression.py --seed 3 --dataset survival-screen-HEK293 --config configs/crispr.yaml --likelihood heteroscedastic --method marglik --head meanvar
+python run_uci_crispr_regression.py --seed 4 --dataset flow-cytometry-HEK293 --config configs/crispr.yaml --likelihood homoscedastic --method map
 python run_uci_crispr_regression.py --seed 4 --dataset flow-cytometry-HEK293 --config configs/crispr.yaml --likelihood homoscedastic --method marglik
 python run_uci_crispr_regression.py --seed 4 --dataset flow-cytometry-HEK293 --config configs/crispr.yaml --likelihood heteroscedastic --method faithful --head gaussian
 python run_uci_crispr_regression.py --seed 4 --dataset flow-cytometry-HEK293 --config configs/crispr.yaml --likelihood heteroscedastic --method betanll --head gaussian --beta 0.0
@@ -128,6 +108,7 @@ python run_uci_crispr_regression.py --seed 4 --dataset flow-cytometry-HEK293 --c
 python run_uci_crispr_regression.py --seed 4 --dataset flow-cytometry-HEK293 --config configs/crispr.yaml --likelihood heteroscedastic --method marglik --head natural
 python run_uci_crispr_regression.py --seed 4 --dataset flow-cytometry-HEK293 --config configs/crispr.yaml --likelihood heteroscedastic --method map --head meanvar
 python run_uci_crispr_regression.py --seed 4 --dataset flow-cytometry-HEK293 --config configs/crispr.yaml --likelihood heteroscedastic --method marglik --head meanvar
+python run_uci_crispr_regression.py --seed 4 --dataset survival-screen-A375 --config configs/crispr.yaml --likelihood homoscedastic --method map
 python run_uci_crispr_regression.py --seed 4 --dataset survival-screen-A375 --config configs/crispr.yaml --likelihood homoscedastic --method marglik
 python run_uci_crispr_regression.py --seed 4 --dataset survival-screen-A375 --config configs/crispr.yaml --likelihood heteroscedastic --method faithful --head gaussian
 python run_uci_crispr_regression.py --seed 4 --dataset survival-screen-A375 --config configs/crispr.yaml --likelihood heteroscedastic --method betanll --head gaussian --beta 0.0
@@ -138,6 +119,7 @@ python run_uci_crispr_regression.py --seed 4 --dataset survival-screen-A375 --co
 python run_uci_crispr_regression.py --seed 4 --dataset survival-screen-A375 --config configs/crispr.yaml --likelihood heteroscedastic --method marglik --head natural
 python run_uci_crispr_regression.py --seed 4 --dataset survival-screen-A375 --config configs/crispr.yaml --likelihood heteroscedastic --method map --head meanvar
 python run_uci_crispr_regression.py --seed 4 --dataset survival-screen-A375 --config configs/crispr.yaml --likelihood heteroscedastic --method marglik --head meanvar
+python run_uci_crispr_regression.py --seed 4 --dataset survival-screen-HEK293 --config configs/crispr.yaml --likelihood homoscedastic --method map
 python run_uci_crispr_regression.py --seed 4 --dataset survival-screen-HEK293 --config configs/crispr.yaml --likelihood homoscedastic --method marglik
 python run_uci_crispr_regression.py --seed 4 --dataset survival-screen-HEK293 --config configs/crispr.yaml --likelihood heteroscedastic --method faithful --head gaussian
 python run_uci_crispr_regression.py --seed 4 --dataset survival-screen-HEK293 --config configs/crispr.yaml --likelihood heteroscedastic --method betanll --head gaussian --beta 0.0
@@ -148,6 +130,7 @@ python run_uci_crispr_regression.py --seed 4 --dataset survival-screen-HEK293 --
 python run_uci_crispr_regression.py --seed 4 --dataset survival-screen-HEK293 --config configs/crispr.yaml --likelihood heteroscedastic --method marglik --head natural
 python run_uci_crispr_regression.py --seed 4 --dataset survival-screen-HEK293 --config configs/crispr.yaml --likelihood heteroscedastic --method map --head meanvar
 python run_uci_crispr_regression.py --seed 4 --dataset survival-screen-HEK293 --config configs/crispr.yaml --likelihood heteroscedastic --method marglik --head meanvar
+python run_uci_crispr_regression.py --seed 5 --dataset flow-cytometry-HEK293 --config configs/crispr.yaml --likelihood homoscedastic --method map
 python run_uci_crispr_regression.py --seed 5 --dataset flow-cytometry-HEK293 --config configs/crispr.yaml --likelihood homoscedastic --method marglik
 python run_uci_crispr_regression.py --seed 5 --dataset flow-cytometry-HEK293 --config configs/crispr.yaml --likelihood heteroscedastic --method faithful --head gaussian
 python run_uci_crispr_regression.py --seed 5 --dataset flow-cytometry-HEK293 --config configs/crispr.yaml --likelihood heteroscedastic --method betanll --head gaussian --beta 0.0
@@ -158,6 +141,7 @@ python run_uci_crispr_regression.py --seed 5 --dataset flow-cytometry-HEK293 --c
 python run_uci_crispr_regression.py --seed 5 --dataset flow-cytometry-HEK293 --config configs/crispr.yaml --likelihood heteroscedastic --method marglik --head natural
 python run_uci_crispr_regression.py --seed 5 --dataset flow-cytometry-HEK293 --config configs/crispr.yaml --likelihood heteroscedastic --method map --head meanvar
 python run_uci_crispr_regression.py --seed 5 --dataset flow-cytometry-HEK293 --config configs/crispr.yaml --likelihood heteroscedastic --method marglik --head meanvar
+python run_uci_crispr_regression.py --seed 5 --dataset survival-screen-A375 --config configs/crispr.yaml --likelihood homoscedastic --method map
 python run_uci_crispr_regression.py --seed 5 --dataset survival-screen-A375 --config configs/crispr.yaml --likelihood homoscedastic --method marglik
 python run_uci_crispr_regression.py --seed 5 --dataset survival-screen-A375 --config configs/crispr.yaml --likelihood heteroscedastic --method faithful --head gaussian
 python run_uci_crispr_regression.py --seed 5 --dataset survival-screen-A375 --config configs/crispr.yaml --likelihood heteroscedastic --method betanll --head gaussian --beta 0.0
@@ -168,6 +152,7 @@ python run_uci_crispr_regression.py --seed 5 --dataset survival-screen-A375 --co
 python run_uci_crispr_regression.py --seed 5 --dataset survival-screen-A375 --config configs/crispr.yaml --likelihood heteroscedastic --method marglik --head natural
 python run_uci_crispr_regression.py --seed 5 --dataset survival-screen-A375 --config configs/crispr.yaml --likelihood heteroscedastic --method map --head meanvar
 python run_uci_crispr_regression.py --seed 5 --dataset survival-screen-A375 --config configs/crispr.yaml --likelihood heteroscedastic --method marglik --head meanvar
+python run_uci_crispr_regression.py --seed 5 --dataset survival-screen-HEK293 --config configs/crispr.yaml --likelihood homoscedastic --method map
 python run_uci_crispr_regression.py --seed 5 --dataset survival-screen-HEK293 --config configs/crispr.yaml --likelihood homoscedastic --method marglik
 python run_uci_crispr_regression.py --seed 5 --dataset survival-screen-HEK293 --config configs/crispr.yaml --likelihood heteroscedastic --method faithful --head gaussian
 python run_uci_crispr_regression.py --seed 5 --dataset survival-screen-HEK293 --config configs/crispr.yaml --likelihood heteroscedastic --method betanll --head gaussian --beta 0.0
@@ -178,6 +163,7 @@ python run_uci_crispr_regression.py --seed 5 --dataset survival-screen-HEK293 --
 python run_uci_crispr_regression.py --seed 5 --dataset survival-screen-HEK293 --config configs/crispr.yaml --likelihood heteroscedastic --method marglik --head natural
 python run_uci_crispr_regression.py --seed 5 --dataset survival-screen-HEK293 --config configs/crispr.yaml --likelihood heteroscedastic --method map --head meanvar
 python run_uci_crispr_regression.py --seed 5 --dataset survival-screen-HEK293 --config configs/crispr.yaml --likelihood heteroscedastic --method marglik --head meanvar
+python run_uci_crispr_regression.py --seed 6 --dataset flow-cytometry-HEK293 --config configs/crispr.yaml --likelihood homoscedastic --method map
 python run_uci_crispr_regression.py --seed 6 --dataset flow-cytometry-HEK293 --config configs/crispr.yaml --likelihood homoscedastic --method marglik
 python run_uci_crispr_regression.py --seed 6 --dataset flow-cytometry-HEK293 --config configs/crispr.yaml --likelihood heteroscedastic --method faithful --head gaussian
 python run_uci_crispr_regression.py --seed 6 --dataset flow-cytometry-HEK293 --config configs/crispr.yaml --likelihood heteroscedastic --method betanll --head gaussian --beta 0.0
@@ -188,6 +174,7 @@ python run_uci_crispr_regression.py --seed 6 --dataset flow-cytometry-HEK293 --c
 python run_uci_crispr_regression.py --seed 6 --dataset flow-cytometry-HEK293 --config configs/crispr.yaml --likelihood heteroscedastic --method marglik --head natural
 python run_uci_crispr_regression.py --seed 6 --dataset flow-cytometry-HEK293 --config configs/crispr.yaml --likelihood heteroscedastic --method map --head meanvar
 python run_uci_crispr_regression.py --seed 6 --dataset flow-cytometry-HEK293 --config configs/crispr.yaml --likelihood heteroscedastic --method marglik --head meanvar
+python run_uci_crispr_regression.py --seed 6 --dataset survival-screen-A375 --config configs/crispr.yaml --likelihood homoscedastic --method map
 python run_uci_crispr_regression.py --seed 6 --dataset survival-screen-A375 --config configs/crispr.yaml --likelihood homoscedastic --method marglik
 python run_uci_crispr_regression.py --seed 6 --dataset survival-screen-A375 --config configs/crispr.yaml --likelihood heteroscedastic --method faithful --head gaussian
 python run_uci_crispr_regression.py --seed 6 --dataset survival-screen-A375 --config configs/crispr.yaml --likelihood heteroscedastic --method betanll --head gaussian --beta 0.0
@@ -198,6 +185,7 @@ python run_uci_crispr_regression.py --seed 6 --dataset survival-screen-A375 --co
 python run_uci_crispr_regression.py --seed 6 --dataset survival-screen-A375 --config configs/crispr.yaml --likelihood heteroscedastic --method marglik --head natural
 python run_uci_crispr_regression.py --seed 6 --dataset survival-screen-A375 --config configs/crispr.yaml --likelihood heteroscedastic --method map --head meanvar
 python run_uci_crispr_regression.py --seed 6 --dataset survival-screen-A375 --config configs/crispr.yaml --likelihood heteroscedastic --method marglik --head meanvar
+python run_uci_crispr_regression.py --seed 6 --dataset survival-screen-HEK293 --config configs/crispr.yaml --likelihood homoscedastic --method map
 python run_uci_crispr_regression.py --seed 6 --dataset survival-screen-HEK293 --config configs/crispr.yaml --likelihood homoscedastic --method marglik
 python run_uci_crispr_regression.py --seed 6 --dataset survival-screen-HEK293 --config configs/crispr.yaml --likelihood heteroscedastic --method faithful --head gaussian
 python run_uci_crispr_regression.py --seed 6 --dataset survival-screen-HEK293 --config configs/crispr.yaml --likelihood heteroscedastic --method betanll --head gaussian --beta 0.0
@@ -208,6 +196,7 @@ python run_uci_crispr_regression.py --seed 6 --dataset survival-screen-HEK293 --
 python run_uci_crispr_regression.py --seed 6 --dataset survival-screen-HEK293 --config configs/crispr.yaml --likelihood heteroscedastic --method marglik --head natural
 python run_uci_crispr_regression.py --seed 6 --dataset survival-screen-HEK293 --config configs/crispr.yaml --likelihood heteroscedastic --method map --head meanvar
 python run_uci_crispr_regression.py --seed 6 --dataset survival-screen-HEK293 --config configs/crispr.yaml --likelihood heteroscedastic --method marglik --head meanvar
+python run_uci_crispr_regression.py --seed 7 --dataset flow-cytometry-HEK293 --config configs/crispr.yaml --likelihood homoscedastic --method map
 python run_uci_crispr_regression.py --seed 7 --dataset flow-cytometry-HEK293 --config configs/crispr.yaml --likelihood homoscedastic --method marglik
 python run_uci_crispr_regression.py --seed 7 --dataset flow-cytometry-HEK293 --config configs/crispr.yaml --likelihood heteroscedastic --method faithful --head gaussian
 python run_uci_crispr_regression.py --seed 7 --dataset flow-cytometry-HEK293 --config configs/crispr.yaml --likelihood heteroscedastic --method betanll --head gaussian --beta 0.0
@@ -218,6 +207,7 @@ python run_uci_crispr_regression.py --seed 7 --dataset flow-cytometry-HEK293 --c
 python run_uci_crispr_regression.py --seed 7 --dataset flow-cytometry-HEK293 --config configs/crispr.yaml --likelihood heteroscedastic --method marglik --head natural
 python run_uci_crispr_regression.py --seed 7 --dataset flow-cytometry-HEK293 --config configs/crispr.yaml --likelihood heteroscedastic --method map --head meanvar
 python run_uci_crispr_regression.py --seed 7 --dataset flow-cytometry-HEK293 --config configs/crispr.yaml --likelihood heteroscedastic --method marglik --head meanvar
+python run_uci_crispr_regression.py --seed 7 --dataset survival-screen-A375 --config configs/crispr.yaml --likelihood homoscedastic --method map
 python run_uci_crispr_regression.py --seed 7 --dataset survival-screen-A375 --config configs/crispr.yaml --likelihood homoscedastic --method marglik
 python run_uci_crispr_regression.py --seed 7 --dataset survival-screen-A375 --config configs/crispr.yaml --likelihood heteroscedastic --method faithful --head gaussian
 python run_uci_crispr_regression.py --seed 7 --dataset survival-screen-A375 --config configs/crispr.yaml --likelihood heteroscedastic --method betanll --head gaussian --beta 0.0
@@ -228,6 +218,7 @@ python run_uci_crispr_regression.py --seed 7 --dataset survival-screen-A375 --co
 python run_uci_crispr_regression.py --seed 7 --dataset survival-screen-A375 --config configs/crispr.yaml --likelihood heteroscedastic --method marglik --head natural
 python run_uci_crispr_regression.py --seed 7 --dataset survival-screen-A375 --config configs/crispr.yaml --likelihood heteroscedastic --method map --head meanvar
 python run_uci_crispr_regression.py --seed 7 --dataset survival-screen-A375 --config configs/crispr.yaml --likelihood heteroscedastic --method marglik --head meanvar
+python run_uci_crispr_regression.py --seed 7 --dataset survival-screen-HEK293 --config configs/crispr.yaml --likelihood homoscedastic --method map
 python run_uci_crispr_regression.py --seed 7 --dataset survival-screen-HEK293 --config configs/crispr.yaml --likelihood homoscedastic --method marglik
 python run_uci_crispr_regression.py --seed 7 --dataset survival-screen-HEK293 --config configs/crispr.yaml --likelihood heteroscedastic --method faithful --head gaussian
 python run_uci_crispr_regression.py --seed 7 --dataset survival-screen-HEK293 --config configs/crispr.yaml --likelihood heteroscedastic --method betanll --head gaussian --beta 0.0
@@ -238,6 +229,7 @@ python run_uci_crispr_regression.py --seed 7 --dataset survival-screen-HEK293 --
 python run_uci_crispr_regression.py --seed 7 --dataset survival-screen-HEK293 --config configs/crispr.yaml --likelihood heteroscedastic --method marglik --head natural
 python run_uci_crispr_regression.py --seed 7 --dataset survival-screen-HEK293 --config configs/crispr.yaml --likelihood heteroscedastic --method map --head meanvar
 python run_uci_crispr_regression.py --seed 7 --dataset survival-screen-HEK293 --config configs/crispr.yaml --likelihood heteroscedastic --method marglik --head meanvar
+python run_uci_crispr_regression.py --seed 8 --dataset flow-cytometry-HEK293 --config configs/crispr.yaml --likelihood homoscedastic --method map
 python run_uci_crispr_regression.py --seed 8 --dataset flow-cytometry-HEK293 --config configs/crispr.yaml --likelihood homoscedastic --method marglik
 python run_uci_crispr_regression.py --seed 8 --dataset flow-cytometry-HEK293 --config configs/crispr.yaml --likelihood heteroscedastic --method faithful --head gaussian
 python run_uci_crispr_regression.py --seed 8 --dataset flow-cytometry-HEK293 --config configs/crispr.yaml --likelihood heteroscedastic --method betanll --head gaussian --beta 0.0
@@ -248,6 +240,7 @@ python run_uci_crispr_regression.py --seed 8 --dataset flow-cytometry-HEK293 --c
 python run_uci_crispr_regression.py --seed 8 --dataset flow-cytometry-HEK293 --config configs/crispr.yaml --likelihood heteroscedastic --method marglik --head natural
 python run_uci_crispr_regression.py --seed 8 --dataset flow-cytometry-HEK293 --config configs/crispr.yaml --likelihood heteroscedastic --method map --head meanvar
 python run_uci_crispr_regression.py --seed 8 --dataset flow-cytometry-HEK293 --config configs/crispr.yaml --likelihood heteroscedastic --method marglik --head meanvar
+python run_uci_crispr_regression.py --seed 8 --dataset survival-screen-A375 --config configs/crispr.yaml --likelihood homoscedastic --method map
 python run_uci_crispr_regression.py --seed 8 --dataset survival-screen-A375 --config configs/crispr.yaml --likelihood homoscedastic --method marglik
 python run_uci_crispr_regression.py --seed 8 --dataset survival-screen-A375 --config configs/crispr.yaml --likelihood heteroscedastic --method faithful --head gaussian
 python run_uci_crispr_regression.py --seed 8 --dataset survival-screen-A375 --config configs/crispr.yaml --likelihood heteroscedastic --method betanll --head gaussian --beta 0.0
@@ -258,6 +251,7 @@ python run_uci_crispr_regression.py --seed 8 --dataset survival-screen-A375 --co
 python run_uci_crispr_regression.py --seed 8 --dataset survival-screen-A375 --config configs/crispr.yaml --likelihood heteroscedastic --method marglik --head natural
 python run_uci_crispr_regression.py --seed 8 --dataset survival-screen-A375 --config configs/crispr.yaml --likelihood heteroscedastic --method map --head meanvar
 python run_uci_crispr_regression.py --seed 8 --dataset survival-screen-A375 --config configs/crispr.yaml --likelihood heteroscedastic --method marglik --head meanvar
+python run_uci_crispr_regression.py --seed 8 --dataset survival-screen-HEK293 --config configs/crispr.yaml --likelihood homoscedastic --method map
 python run_uci_crispr_regression.py --seed 8 --dataset survival-screen-HEK293 --config configs/crispr.yaml --likelihood homoscedastic --method marglik
 python run_uci_crispr_regression.py --seed 8 --dataset survival-screen-HEK293 --config configs/crispr.yaml --likelihood heteroscedastic --method faithful --head gaussian
 python run_uci_crispr_regression.py --seed 8 --dataset survival-screen-HEK293 --config configs/crispr.yaml --likelihood heteroscedastic --method betanll --head gaussian --beta 0.0
@@ -268,6 +262,7 @@ python run_uci_crispr_regression.py --seed 8 --dataset survival-screen-HEK293 --
 python run_uci_crispr_regression.py --seed 8 --dataset survival-screen-HEK293 --config configs/crispr.yaml --likelihood heteroscedastic --method marglik --head natural
 python run_uci_crispr_regression.py --seed 8 --dataset survival-screen-HEK293 --config configs/crispr.yaml --likelihood heteroscedastic --method map --head meanvar
 python run_uci_crispr_regression.py --seed 8 --dataset survival-screen-HEK293 --config configs/crispr.yaml --likelihood heteroscedastic --method marglik --head meanvar
+python run_uci_crispr_regression.py --seed 9 --dataset flow-cytometry-HEK293 --config configs/crispr.yaml --likelihood homoscedastic --method map
 python run_uci_crispr_regression.py --seed 9 --dataset flow-cytometry-HEK293 --config configs/crispr.yaml --likelihood homoscedastic --method marglik
 python run_uci_crispr_regression.py --seed 9 --dataset flow-cytometry-HEK293 --config configs/crispr.yaml --likelihood heteroscedastic --method faithful --head gaussian
 python run_uci_crispr_regression.py --seed 9 --dataset flow-cytometry-HEK293 --config configs/crispr.yaml --likelihood heteroscedastic --method betanll --head gaussian --beta 0.0
@@ -278,6 +273,7 @@ python run_uci_crispr_regression.py --seed 9 --dataset flow-cytometry-HEK293 --c
 python run_uci_crispr_regression.py --seed 9 --dataset flow-cytometry-HEK293 --config configs/crispr.yaml --likelihood heteroscedastic --method marglik --head natural
 python run_uci_crispr_regression.py --seed 9 --dataset flow-cytometry-HEK293 --config configs/crispr.yaml --likelihood heteroscedastic --method map --head meanvar
 python run_uci_crispr_regression.py --seed 9 --dataset flow-cytometry-HEK293 --config configs/crispr.yaml --likelihood heteroscedastic --method marglik --head meanvar
+python run_uci_crispr_regression.py --seed 9 --dataset survival-screen-A375 --config configs/crispr.yaml --likelihood homoscedastic --method map
 python run_uci_crispr_regression.py --seed 9 --dataset survival-screen-A375 --config configs/crispr.yaml --likelihood homoscedastic --method marglik
 python run_uci_crispr_regression.py --seed 9 --dataset survival-screen-A375 --config configs/crispr.yaml --likelihood heteroscedastic --method faithful --head gaussian
 python run_uci_crispr_regression.py --seed 9 --dataset survival-screen-A375 --config configs/crispr.yaml --likelihood heteroscedastic --method betanll --head gaussian --beta 0.0
@@ -288,6 +284,7 @@ python run_uci_crispr_regression.py --seed 9 --dataset survival-screen-A375 --co
 python run_uci_crispr_regression.py --seed 9 --dataset survival-screen-A375 --config configs/crispr.yaml --likelihood heteroscedastic --method marglik --head natural
 python run_uci_crispr_regression.py --seed 9 --dataset survival-screen-A375 --config configs/crispr.yaml --likelihood heteroscedastic --method map --head meanvar
 python run_uci_crispr_regression.py --seed 9 --dataset survival-screen-A375 --config configs/crispr.yaml --likelihood heteroscedastic --method marglik --head meanvar
+python run_uci_crispr_regression.py --seed 9 --dataset survival-screen-HEK293 --config configs/crispr.yaml --likelihood homoscedastic --method map
 python run_uci_crispr_regression.py --seed 9 --dataset survival-screen-HEK293 --config configs/crispr.yaml --likelihood homoscedastic --method marglik
 python run_uci_crispr_regression.py --seed 9 --dataset survival-screen-HEK293 --config configs/crispr.yaml --likelihood heteroscedastic --method faithful --head gaussian
 python run_uci_crispr_regression.py --seed 9 --dataset survival-screen-HEK293 --config configs/crispr.yaml --likelihood heteroscedastic --method betanll --head gaussian --beta 0.0
@@ -298,6 +295,7 @@ python run_uci_crispr_regression.py --seed 9 --dataset survival-screen-HEK293 --
 python run_uci_crispr_regression.py --seed 9 --dataset survival-screen-HEK293 --config configs/crispr.yaml --likelihood heteroscedastic --method marglik --head natural
 python run_uci_crispr_regression.py --seed 9 --dataset survival-screen-HEK293 --config configs/crispr.yaml --likelihood heteroscedastic --method map --head meanvar
 python run_uci_crispr_regression.py --seed 9 --dataset survival-screen-HEK293 --config configs/crispr.yaml --likelihood heteroscedastic --method marglik --head meanvar
+python run_uci_crispr_regression.py --seed 10 --dataset flow-cytometry-HEK293 --config configs/crispr.yaml --likelihood homoscedastic --method map
 python run_uci_crispr_regression.py --seed 10 --dataset flow-cytometry-HEK293 --config configs/crispr.yaml --likelihood homoscedastic --method marglik
 python run_uci_crispr_regression.py --seed 10 --dataset flow-cytometry-HEK293 --config configs/crispr.yaml --likelihood heteroscedastic --method faithful --head gaussian
 python run_uci_crispr_regression.py --seed 10 --dataset flow-cytometry-HEK293 --config configs/crispr.yaml --likelihood heteroscedastic --method betanll --head gaussian --beta 0.0
@@ -308,6 +306,7 @@ python run_uci_crispr_regression.py --seed 10 --dataset flow-cytometry-HEK293 --
 python run_uci_crispr_regression.py --seed 10 --dataset flow-cytometry-HEK293 --config configs/crispr.yaml --likelihood heteroscedastic --method marglik --head natural
 python run_uci_crispr_regression.py --seed 10 --dataset flow-cytometry-HEK293 --config configs/crispr.yaml --likelihood heteroscedastic --method map --head meanvar
 python run_uci_crispr_regression.py --seed 10 --dataset flow-cytometry-HEK293 --config configs/crispr.yaml --likelihood heteroscedastic --method marglik --head meanvar
+python run_uci_crispr_regression.py --seed 10 --dataset survival-screen-A375 --config configs/crispr.yaml --likelihood homoscedastic --method map
 python run_uci_crispr_regression.py --seed 10 --dataset survival-screen-A375 --config configs/crispr.yaml --likelihood homoscedastic --method marglik
 python run_uci_crispr_regression.py --seed 10 --dataset survival-screen-A375 --config configs/crispr.yaml --likelihood heteroscedastic --method faithful --head gaussian
 python run_uci_crispr_regression.py --seed 10 --dataset survival-screen-A375 --config configs/crispr.yaml --likelihood heteroscedastic --method betanll --head gaussian --beta 0.0
@@ -318,6 +317,7 @@ python run_uci_crispr_regression.py --seed 10 --dataset survival-screen-A375 --c
 python run_uci_crispr_regression.py --seed 10 --dataset survival-screen-A375 --config configs/crispr.yaml --likelihood heteroscedastic --method marglik --head natural
 python run_uci_crispr_regression.py --seed 10 --dataset survival-screen-A375 --config configs/crispr.yaml --likelihood heteroscedastic --method map --head meanvar
 python run_uci_crispr_regression.py --seed 10 --dataset survival-screen-A375 --config configs/crispr.yaml --likelihood heteroscedastic --method marglik --head meanvar
+python run_uci_crispr_regression.py --seed 10 --dataset survival-screen-HEK293 --config configs/crispr.yaml --likelihood homoscedastic --method map
 python run_uci_crispr_regression.py --seed 10 --dataset survival-screen-HEK293 --config configs/crispr.yaml --likelihood homoscedastic --method marglik
 python run_uci_crispr_regression.py --seed 10 --dataset survival-screen-HEK293 --config configs/crispr.yaml --likelihood heteroscedastic --method faithful --head gaussian
 python run_uci_crispr_regression.py --seed 10 --dataset survival-screen-HEK293 --config configs/crispr.yaml --likelihood heteroscedastic --method betanll --head gaussian --beta 0.0
@@ -328,3 +328,387 @@ python run_uci_crispr_regression.py --seed 10 --dataset survival-screen-HEK293 -
 python run_uci_crispr_regression.py --seed 10 --dataset survival-screen-HEK293 --config configs/crispr.yaml --likelihood heteroscedastic --method marglik --head natural
 python run_uci_crispr_regression.py --seed 10 --dataset survival-screen-HEK293 --config configs/crispr.yaml --likelihood heteroscedastic --method map --head meanvar
 python run_uci_crispr_regression.py --seed 10 --dataset survival-screen-HEK293 --config configs/crispr.yaml --likelihood heteroscedastic --method marglik --head meanvar
+python run_uci_crispr_regression.py --seed 1 --dataset boston-housing --config configs/uci.yaml --likelihood homoscedastic --method map
+python run_uci_crispr_regression.py --seed 1 --dataset boston-housing --config configs/uci.yaml --likelihood homoscedastic --method marglik
+python run_uci_crispr_regression.py --seed 1 --dataset boston-housing --config configs/uci.yaml --likelihood heteroscedastic --method faithful --head gaussian
+python run_uci_crispr_regression.py --seed 1 --dataset boston-housing --config configs/uci.yaml --likelihood heteroscedastic --method betanll --head gaussian --beta 0.0
+python run_uci_crispr_regression.py --seed 1 --dataset boston-housing --config configs/uci.yaml --likelihood heteroscedastic --method betanll --head gaussian --beta 0.5
+python run_uci_crispr_regression.py --seed 1 --dataset boston-housing --config configs/uci.yaml --likelihood heteroscedastic --method betanll --head gaussian --beta 1.0
+python run_uci_crispr_regression.py --seed 1 --dataset boston-housing --config configs/uci.yaml --likelihood heteroscedastic --method mcdropout --n_epochs 1000 --lr 0.001 --lr_min 0.001 --optimizer Adam
+python run_uci_crispr_regression.py --seed 1 --dataset boston-housing --config configs/uci.yaml --likelihood heteroscedastic --method vi --n_epochs 1000 --lr 0.001 --lr_min 0.001 --optimizer Adam
+python run_uci_crispr_regression.py --seed 1 --dataset boston-housing --config configs/uci.yaml --likelihood heteroscedastic --method map --head natural
+python run_uci_crispr_regression.py --seed 1 --dataset boston-housing --config configs/uci.yaml --likelihood heteroscedastic --method marglik --head natural
+python run_uci_crispr_regression.py --seed 1 --dataset boston-housing --config configs/uci.yaml --likelihood heteroscedastic --method map --head meanvar
+python run_uci_crispr_regression.py --seed 1 --dataset boston-housing --config configs/uci.yaml --likelihood heteroscedastic --method marglik --head meanvar
+python run_uci_crispr_regression.py --seed 1 --dataset concrete --config configs/uci.yaml --likelihood homoscedastic --method map
+python run_uci_crispr_regression.py --seed 1 --dataset concrete --config configs/uci.yaml --likelihood homoscedastic --method marglik
+python run_uci_crispr_regression.py --seed 1 --dataset concrete --config configs/uci.yaml --likelihood heteroscedastic --method faithful --head gaussian
+python run_uci_crispr_regression.py --seed 1 --dataset concrete --config configs/uci.yaml --likelihood heteroscedastic --method betanll --head gaussian --beta 0.0
+python run_uci_crispr_regression.py --seed 1 --dataset concrete --config configs/uci.yaml --likelihood heteroscedastic --method betanll --head gaussian --beta 0.5
+python run_uci_crispr_regression.py --seed 1 --dataset concrete --config configs/uci.yaml --likelihood heteroscedastic --method betanll --head gaussian --beta 1.0
+python run_uci_crispr_regression.py --seed 1 --dataset concrete --config configs/uci.yaml --likelihood heteroscedastic --method mcdropout --n_epochs 1000 --lr 0.001 --lr_min 0.001 --optimizer Adam
+python run_uci_crispr_regression.py --seed 1 --dataset concrete --config configs/uci.yaml --likelihood heteroscedastic --method vi --n_epochs 1000 --lr 0.001 --lr_min 0.001 --optimizer Adam
+python run_uci_crispr_regression.py --seed 1 --dataset concrete --config configs/uci.yaml --likelihood heteroscedastic --method map --head natural
+python run_uci_crispr_regression.py --seed 1 --dataset concrete --config configs/uci.yaml --likelihood heteroscedastic --method marglik --head natural
+python run_uci_crispr_regression.py --seed 1 --dataset concrete --config configs/uci.yaml --likelihood heteroscedastic --method map --head meanvar
+python run_uci_crispr_regression.py --seed 1 --dataset concrete --config configs/uci.yaml --likelihood heteroscedastic --method marglik --head meanvar
+python run_uci_crispr_regression.py --seed 1 --dataset energy --config configs/uci.yaml --likelihood homoscedastic --method map
+python run_uci_crispr_regression.py --seed 1 --dataset energy --config configs/uci.yaml --likelihood homoscedastic --method marglik
+python run_uci_crispr_regression.py --seed 1 --dataset energy --config configs/uci.yaml --likelihood heteroscedastic --method faithful --head gaussian
+python run_uci_crispr_regression.py --seed 1 --dataset energy --config configs/uci.yaml --likelihood heteroscedastic --method betanll --head gaussian --beta 0.0
+python run_uci_crispr_regression.py --seed 1 --dataset energy --config configs/uci.yaml --likelihood heteroscedastic --method betanll --head gaussian --beta 0.5
+python run_uci_crispr_regression.py --seed 1 --dataset energy --config configs/uci.yaml --likelihood heteroscedastic --method betanll --head gaussian --beta 1.0
+python run_uci_crispr_regression.py --seed 1 --dataset energy --config configs/uci.yaml --likelihood heteroscedastic --method mcdropout --n_epochs 1000 --lr 0.001 --lr_min 0.001 --optimizer Adam
+python run_uci_crispr_regression.py --seed 1 --dataset energy --config configs/uci.yaml --likelihood heteroscedastic --method vi --n_epochs 1000 --lr 0.001 --lr_min 0.001 --optimizer Adam
+python run_uci_crispr_regression.py --seed 1 --dataset energy --config configs/uci.yaml --likelihood heteroscedastic --method map --head natural
+python run_uci_crispr_regression.py --seed 1 --dataset energy --config configs/uci.yaml --likelihood heteroscedastic --method marglik --head natural
+python run_uci_crispr_regression.py --seed 1 --dataset energy --config configs/uci.yaml --likelihood heteroscedastic --method map --head meanvar
+python run_uci_crispr_regression.py --seed 1 --dataset energy --config configs/uci.yaml --likelihood heteroscedastic --method marglik --head meanvar
+python run_uci_crispr_regression.py --seed 1 --dataset kin8nm --config configs/uci.yaml --likelihood homoscedastic --method map
+python run_uci_crispr_regression.py --seed 1 --dataset kin8nm --config configs/uci.yaml --likelihood homoscedastic --method marglik
+python run_uci_crispr_regression.py --seed 1 --dataset kin8nm --config configs/uci.yaml --likelihood heteroscedastic --method faithful --head gaussian
+python run_uci_crispr_regression.py --seed 1 --dataset kin8nm --config configs/uci.yaml --likelihood heteroscedastic --method betanll --head gaussian --beta 0.0
+python run_uci_crispr_regression.py --seed 1 --dataset kin8nm --config configs/uci.yaml --likelihood heteroscedastic --method betanll --head gaussian --beta 0.5
+python run_uci_crispr_regression.py --seed 1 --dataset kin8nm --config configs/uci.yaml --likelihood heteroscedastic --method betanll --head gaussian --beta 1.0
+python run_uci_crispr_regression.py --seed 1 --dataset kin8nm --config configs/uci.yaml --likelihood heteroscedastic --method mcdropout --n_epochs 1000 --lr 0.001 --lr_min 0.001 --optimizer Adam
+python run_uci_crispr_regression.py --seed 1 --dataset kin8nm --config configs/uci.yaml --likelihood heteroscedastic --method vi --n_epochs 1000 --lr 0.001 --lr_min 0.001 --optimizer Adam
+python run_uci_crispr_regression.py --seed 1 --dataset kin8nm --config configs/uci.yaml --likelihood heteroscedastic --method map --head natural
+python run_uci_crispr_regression.py --seed 1 --dataset kin8nm --config configs/uci.yaml --likelihood heteroscedastic --method marglik --head natural
+python run_uci_crispr_regression.py --seed 1 --dataset kin8nm --config configs/uci.yaml --likelihood heteroscedastic --method map --head meanvar
+python run_uci_crispr_regression.py --seed 1 --dataset kin8nm --config configs/uci.yaml --likelihood heteroscedastic --method marglik --head meanvar
+python run_uci_crispr_regression.py --seed 1 --dataset naval-propulsion-plant --config configs/uci.yaml --likelihood homoscedastic --method map
+python run_uci_crispr_regression.py --seed 1 --dataset naval-propulsion-plant --config configs/uci.yaml --likelihood homoscedastic --method marglik
+python run_uci_crispr_regression.py --seed 1 --dataset naval-propulsion-plant --config configs/uci.yaml --likelihood heteroscedastic --method faithful --head gaussian
+python run_uci_crispr_regression.py --seed 1 --dataset naval-propulsion-plant --config configs/uci.yaml --likelihood heteroscedastic --method betanll --head gaussian --beta 0.0
+python run_uci_crispr_regression.py --seed 1 --dataset naval-propulsion-plant --config configs/uci.yaml --likelihood heteroscedastic --method betanll --head gaussian --beta 0.5
+python run_uci_crispr_regression.py --seed 1 --dataset naval-propulsion-plant --config configs/uci.yaml --likelihood heteroscedastic --method betanll --head gaussian --beta 1.0
+python run_uci_crispr_regression.py --seed 1 --dataset naval-propulsion-plant --config configs/uci.yaml --likelihood heteroscedastic --method mcdropout --n_epochs 1000 --lr 0.001 --lr_min 0.001 --optimizer Adam
+python run_uci_crispr_regression.py --seed 1 --dataset naval-propulsion-plant --config configs/uci.yaml --likelihood heteroscedastic --method vi --n_epochs 1000 --lr 0.001 --lr_min 0.001 --optimizer Adam
+python run_uci_crispr_regression.py --seed 1 --dataset naval-propulsion-plant --config configs/uci.yaml --likelihood heteroscedastic --method map --head natural
+python run_uci_crispr_regression.py --seed 1 --dataset naval-propulsion-plant --config configs/uci.yaml --likelihood heteroscedastic --method marglik --head natural
+python run_uci_crispr_regression.py --seed 1 --dataset naval-propulsion-plant --config configs/uci.yaml --likelihood heteroscedastic --method map --head meanvar
+python run_uci_crispr_regression.py --seed 1 --dataset naval-propulsion-plant --config configs/uci.yaml --likelihood heteroscedastic --method marglik --head meanvar
+python run_uci_crispr_regression.py --seed 1 --dataset power-plant --config configs/uci.yaml --likelihood homoscedastic --method map
+python run_uci_crispr_regression.py --seed 1 --dataset power-plant --config configs/uci.yaml --likelihood homoscedastic --method marglik
+python run_uci_crispr_regression.py --seed 1 --dataset power-plant --config configs/uci.yaml --likelihood heteroscedastic --method faithful --head gaussian
+python run_uci_crispr_regression.py --seed 1 --dataset power-plant --config configs/uci.yaml --likelihood heteroscedastic --method betanll --head gaussian --beta 0.0
+python run_uci_crispr_regression.py --seed 1 --dataset power-plant --config configs/uci.yaml --likelihood heteroscedastic --method betanll --head gaussian --beta 0.5
+python run_uci_crispr_regression.py --seed 1 --dataset power-plant --config configs/uci.yaml --likelihood heteroscedastic --method betanll --head gaussian --beta 1.0
+python run_uci_crispr_regression.py --seed 1 --dataset power-plant --config configs/uci.yaml --likelihood heteroscedastic --method mcdropout --n_epochs 1000 --lr 0.001 --lr_min 0.001 --optimizer Adam
+python run_uci_crispr_regression.py --seed 1 --dataset power-plant --config configs/uci.yaml --likelihood heteroscedastic --method vi --n_epochs 1000 --lr 0.001 --lr_min 0.001 --optimizer Adam
+python run_uci_crispr_regression.py --seed 1 --dataset power-plant --config configs/uci.yaml --likelihood heteroscedastic --method map --head natural
+python run_uci_crispr_regression.py --seed 1 --dataset power-plant --config configs/uci.yaml --likelihood heteroscedastic --method marglik --head natural
+python run_uci_crispr_regression.py --seed 1 --dataset power-plant --config configs/uci.yaml --likelihood heteroscedastic --method map --head meanvar
+python run_uci_crispr_regression.py --seed 1 --dataset power-plant --config configs/uci.yaml --likelihood heteroscedastic --method marglik --head meanvar
+python run_uci_crispr_regression.py --seed 1 --dataset wine-quality-red --config configs/uci.yaml --likelihood homoscedastic --method map
+python run_uci_crispr_regression.py --seed 1 --dataset wine-quality-red --config configs/uci.yaml --likelihood homoscedastic --method marglik
+python run_uci_crispr_regression.py --seed 1 --dataset wine-quality-red --config configs/uci.yaml --likelihood heteroscedastic --method faithful --head gaussian
+python run_uci_crispr_regression.py --seed 1 --dataset wine-quality-red --config configs/uci.yaml --likelihood heteroscedastic --method betanll --head gaussian --beta 0.0
+python run_uci_crispr_regression.py --seed 1 --dataset wine-quality-red --config configs/uci.yaml --likelihood heteroscedastic --method betanll --head gaussian --beta 0.5
+python run_uci_crispr_regression.py --seed 1 --dataset wine-quality-red --config configs/uci.yaml --likelihood heteroscedastic --method betanll --head gaussian --beta 1.0
+python run_uci_crispr_regression.py --seed 1 --dataset wine-quality-red --config configs/uci.yaml --likelihood heteroscedastic --method mcdropout --n_epochs 1000 --lr 0.001 --lr_min 0.001 --optimizer Adam
+python run_uci_crispr_regression.py --seed 1 --dataset wine-quality-red --config configs/uci.yaml --likelihood heteroscedastic --method vi --n_epochs 1000 --lr 0.001 --lr_min 0.001 --optimizer Adam
+python run_uci_crispr_regression.py --seed 1 --dataset wine-quality-red --config configs/uci.yaml --likelihood heteroscedastic --method map --head natural
+python run_uci_crispr_regression.py --seed 1 --dataset wine-quality-red --config configs/uci.yaml --likelihood heteroscedastic --method marglik --head natural
+python run_uci_crispr_regression.py --seed 1 --dataset wine-quality-red --config configs/uci.yaml --likelihood heteroscedastic --method map --head meanvar
+python run_uci_crispr_regression.py --seed 1 --dataset wine-quality-red --config configs/uci.yaml --likelihood heteroscedastic --method marglik --head meanvar
+python run_uci_crispr_regression.py --seed 1 --dataset yacht --config configs/uci.yaml --likelihood homoscedastic --method map
+python run_uci_crispr_regression.py --seed 1 --dataset yacht --config configs/uci.yaml --likelihood homoscedastic --method marglik
+python run_uci_crispr_regression.py --seed 1 --dataset yacht --config configs/uci.yaml --likelihood heteroscedastic --method faithful --head gaussian
+python run_uci_crispr_regression.py --seed 1 --dataset yacht --config configs/uci.yaml --likelihood heteroscedastic --method betanll --head gaussian --beta 0.0
+python run_uci_crispr_regression.py --seed 1 --dataset yacht --config configs/uci.yaml --likelihood heteroscedastic --method betanll --head gaussian --beta 0.5
+python run_uci_crispr_regression.py --seed 1 --dataset yacht --config configs/uci.yaml --likelihood heteroscedastic --method betanll --head gaussian --beta 1.0
+python run_uci_crispr_regression.py --seed 1 --dataset yacht --config configs/uci.yaml --likelihood heteroscedastic --method mcdropout --n_epochs 1000 --lr 0.001 --lr_min 0.001 --optimizer Adam
+python run_uci_crispr_regression.py --seed 1 --dataset yacht --config configs/uci.yaml --likelihood heteroscedastic --method vi --n_epochs 1000 --lr 0.001 --lr_min 0.001 --optimizer Adam
+python run_uci_crispr_regression.py --seed 1 --dataset yacht --config configs/uci.yaml --likelihood heteroscedastic --method map --head natural
+python run_uci_crispr_regression.py --seed 1 --dataset yacht --config configs/uci.yaml --likelihood heteroscedastic --method marglik --head natural
+python run_uci_crispr_regression.py --seed 1 --dataset yacht --config configs/uci.yaml --likelihood heteroscedastic --method map --head meanvar
+python run_uci_crispr_regression.py --seed 1 --dataset yacht --config configs/uci.yaml --likelihood heteroscedastic --method marglik --head meanvar
+python run_uci_crispr_regression.py --seed 6 --dataset boston-housing --config configs/uci.yaml --likelihood homoscedastic --method map
+python run_uci_crispr_regression.py --seed 6 --dataset boston-housing --config configs/uci.yaml --likelihood homoscedastic --method marglik
+python run_uci_crispr_regression.py --seed 6 --dataset boston-housing --config configs/uci.yaml --likelihood heteroscedastic --method faithful --head gaussian
+python run_uci_crispr_regression.py --seed 6 --dataset boston-housing --config configs/uci.yaml --likelihood heteroscedastic --method betanll --head gaussian --beta 0.0
+python run_uci_crispr_regression.py --seed 6 --dataset boston-housing --config configs/uci.yaml --likelihood heteroscedastic --method betanll --head gaussian --beta 0.5
+python run_uci_crispr_regression.py --seed 6 --dataset boston-housing --config configs/uci.yaml --likelihood heteroscedastic --method betanll --head gaussian --beta 1.0
+python run_uci_crispr_regression.py --seed 6 --dataset boston-housing --config configs/uci.yaml --likelihood heteroscedastic --method mcdropout --n_epochs 1000 --lr 0.001 --lr_min 0.001 --optimizer Adam
+python run_uci_crispr_regression.py --seed 6 --dataset boston-housing --config configs/uci.yaml --likelihood heteroscedastic --method vi --n_epochs 1000 --lr 0.001 --lr_min 0.001 --optimizer Adam
+python run_uci_crispr_regression.py --seed 6 --dataset boston-housing --config configs/uci.yaml --likelihood heteroscedastic --method map --head natural
+python run_uci_crispr_regression.py --seed 6 --dataset boston-housing --config configs/uci.yaml --likelihood heteroscedastic --method marglik --head natural
+python run_uci_crispr_regression.py --seed 6 --dataset boston-housing --config configs/uci.yaml --likelihood heteroscedastic --method map --head meanvar
+python run_uci_crispr_regression.py --seed 6 --dataset boston-housing --config configs/uci.yaml --likelihood heteroscedastic --method marglik --head meanvar
+python run_uci_crispr_regression.py --seed 6 --dataset concrete --config configs/uci.yaml --likelihood homoscedastic --method map
+python run_uci_crispr_regression.py --seed 6 --dataset concrete --config configs/uci.yaml --likelihood homoscedastic --method marglik
+python run_uci_crispr_regression.py --seed 6 --dataset concrete --config configs/uci.yaml --likelihood heteroscedastic --method faithful --head gaussian
+python run_uci_crispr_regression.py --seed 6 --dataset concrete --config configs/uci.yaml --likelihood heteroscedastic --method betanll --head gaussian --beta 0.0
+python run_uci_crispr_regression.py --seed 6 --dataset concrete --config configs/uci.yaml --likelihood heteroscedastic --method betanll --head gaussian --beta 0.5
+python run_uci_crispr_regression.py --seed 6 --dataset concrete --config configs/uci.yaml --likelihood heteroscedastic --method betanll --head gaussian --beta 1.0
+python run_uci_crispr_regression.py --seed 6 --dataset concrete --config configs/uci.yaml --likelihood heteroscedastic --method mcdropout --n_epochs 1000 --lr 0.001 --lr_min 0.001 --optimizer Adam
+python run_uci_crispr_regression.py --seed 6 --dataset concrete --config configs/uci.yaml --likelihood heteroscedastic --method vi --n_epochs 1000 --lr 0.001 --lr_min 0.001 --optimizer Adam
+python run_uci_crispr_regression.py --seed 6 --dataset concrete --config configs/uci.yaml --likelihood heteroscedastic --method map --head natural
+python run_uci_crispr_regression.py --seed 6 --dataset concrete --config configs/uci.yaml --likelihood heteroscedastic --method marglik --head natural
+python run_uci_crispr_regression.py --seed 6 --dataset concrete --config configs/uci.yaml --likelihood heteroscedastic --method map --head meanvar
+python run_uci_crispr_regression.py --seed 6 --dataset concrete --config configs/uci.yaml --likelihood heteroscedastic --method marglik --head meanvar
+python run_uci_crispr_regression.py --seed 6 --dataset energy --config configs/uci.yaml --likelihood homoscedastic --method map
+python run_uci_crispr_regression.py --seed 6 --dataset energy --config configs/uci.yaml --likelihood homoscedastic --method marglik
+python run_uci_crispr_regression.py --seed 6 --dataset energy --config configs/uci.yaml --likelihood heteroscedastic --method faithful --head gaussian
+python run_uci_crispr_regression.py --seed 6 --dataset energy --config configs/uci.yaml --likelihood heteroscedastic --method betanll --head gaussian --beta 0.0
+python run_uci_crispr_regression.py --seed 6 --dataset energy --config configs/uci.yaml --likelihood heteroscedastic --method betanll --head gaussian --beta 0.5
+python run_uci_crispr_regression.py --seed 6 --dataset energy --config configs/uci.yaml --likelihood heteroscedastic --method betanll --head gaussian --beta 1.0
+python run_uci_crispr_regression.py --seed 6 --dataset energy --config configs/uci.yaml --likelihood heteroscedastic --method mcdropout --n_epochs 1000 --lr 0.001 --lr_min 0.001 --optimizer Adam
+python run_uci_crispr_regression.py --seed 6 --dataset energy --config configs/uci.yaml --likelihood heteroscedastic --method vi --n_epochs 1000 --lr 0.001 --lr_min 0.001 --optimizer Adam
+python run_uci_crispr_regression.py --seed 6 --dataset energy --config configs/uci.yaml --likelihood heteroscedastic --method map --head natural
+python run_uci_crispr_regression.py --seed 6 --dataset energy --config configs/uci.yaml --likelihood heteroscedastic --method marglik --head natural
+python run_uci_crispr_regression.py --seed 6 --dataset energy --config configs/uci.yaml --likelihood heteroscedastic --method map --head meanvar
+python run_uci_crispr_regression.py --seed 6 --dataset energy --config configs/uci.yaml --likelihood heteroscedastic --method marglik --head meanvar
+python run_uci_crispr_regression.py --seed 6 --dataset kin8nm --config configs/uci.yaml --likelihood homoscedastic --method map
+python run_uci_crispr_regression.py --seed 6 --dataset kin8nm --config configs/uci.yaml --likelihood homoscedastic --method marglik
+python run_uci_crispr_regression.py --seed 6 --dataset kin8nm --config configs/uci.yaml --likelihood heteroscedastic --method faithful --head gaussian
+python run_uci_crispr_regression.py --seed 6 --dataset kin8nm --config configs/uci.yaml --likelihood heteroscedastic --method betanll --head gaussian --beta 0.0
+python run_uci_crispr_regression.py --seed 6 --dataset kin8nm --config configs/uci.yaml --likelihood heteroscedastic --method betanll --head gaussian --beta 0.5
+python run_uci_crispr_regression.py --seed 6 --dataset kin8nm --config configs/uci.yaml --likelihood heteroscedastic --method betanll --head gaussian --beta 1.0
+python run_uci_crispr_regression.py --seed 6 --dataset kin8nm --config configs/uci.yaml --likelihood heteroscedastic --method mcdropout --n_epochs 1000 --lr 0.001 --lr_min 0.001 --optimizer Adam
+python run_uci_crispr_regression.py --seed 6 --dataset kin8nm --config configs/uci.yaml --likelihood heteroscedastic --method vi --n_epochs 1000 --lr 0.001 --lr_min 0.001 --optimizer Adam
+python run_uci_crispr_regression.py --seed 6 --dataset kin8nm --config configs/uci.yaml --likelihood heteroscedastic --method map --head natural
+python run_uci_crispr_regression.py --seed 6 --dataset kin8nm --config configs/uci.yaml --likelihood heteroscedastic --method marglik --head natural
+python run_uci_crispr_regression.py --seed 6 --dataset kin8nm --config configs/uci.yaml --likelihood heteroscedastic --method map --head meanvar
+python run_uci_crispr_regression.py --seed 6 --dataset kin8nm --config configs/uci.yaml --likelihood heteroscedastic --method marglik --head meanvar
+python run_uci_crispr_regression.py --seed 6 --dataset naval-propulsion-plant --config configs/uci.yaml --likelihood homoscedastic --method map
+python run_uci_crispr_regression.py --seed 6 --dataset naval-propulsion-plant --config configs/uci.yaml --likelihood homoscedastic --method marglik
+python run_uci_crispr_regression.py --seed 6 --dataset naval-propulsion-plant --config configs/uci.yaml --likelihood heteroscedastic --method faithful --head gaussian
+python run_uci_crispr_regression.py --seed 6 --dataset naval-propulsion-plant --config configs/uci.yaml --likelihood heteroscedastic --method betanll --head gaussian --beta 0.0
+python run_uci_crispr_regression.py --seed 6 --dataset naval-propulsion-plant --config configs/uci.yaml --likelihood heteroscedastic --method betanll --head gaussian --beta 0.5
+python run_uci_crispr_regression.py --seed 6 --dataset naval-propulsion-plant --config configs/uci.yaml --likelihood heteroscedastic --method betanll --head gaussian --beta 1.0
+python run_uci_crispr_regression.py --seed 6 --dataset naval-propulsion-plant --config configs/uci.yaml --likelihood heteroscedastic --method mcdropout --n_epochs 1000 --lr 0.001 --lr_min 0.001 --optimizer Adam
+python run_uci_crispr_regression.py --seed 6 --dataset naval-propulsion-plant --config configs/uci.yaml --likelihood heteroscedastic --method vi --n_epochs 1000 --lr 0.001 --lr_min 0.001 --optimizer Adam
+python run_uci_crispr_regression.py --seed 6 --dataset naval-propulsion-plant --config configs/uci.yaml --likelihood heteroscedastic --method map --head natural
+python run_uci_crispr_regression.py --seed 6 --dataset naval-propulsion-plant --config configs/uci.yaml --likelihood heteroscedastic --method marglik --head natural
+python run_uci_crispr_regression.py --seed 6 --dataset naval-propulsion-plant --config configs/uci.yaml --likelihood heteroscedastic --method map --head meanvar
+python run_uci_crispr_regression.py --seed 6 --dataset naval-propulsion-plant --config configs/uci.yaml --likelihood heteroscedastic --method marglik --head meanvar
+python run_uci_crispr_regression.py --seed 6 --dataset power-plant --config configs/uci.yaml --likelihood homoscedastic --method map
+python run_uci_crispr_regression.py --seed 6 --dataset power-plant --config configs/uci.yaml --likelihood homoscedastic --method marglik
+python run_uci_crispr_regression.py --seed 6 --dataset power-plant --config configs/uci.yaml --likelihood heteroscedastic --method faithful --head gaussian
+python run_uci_crispr_regression.py --seed 6 --dataset power-plant --config configs/uci.yaml --likelihood heteroscedastic --method betanll --head gaussian --beta 0.0
+python run_uci_crispr_regression.py --seed 6 --dataset power-plant --config configs/uci.yaml --likelihood heteroscedastic --method betanll --head gaussian --beta 0.5
+python run_uci_crispr_regression.py --seed 6 --dataset power-plant --config configs/uci.yaml --likelihood heteroscedastic --method betanll --head gaussian --beta 1.0
+python run_uci_crispr_regression.py --seed 6 --dataset power-plant --config configs/uci.yaml --likelihood heteroscedastic --method mcdropout --n_epochs 1000 --lr 0.001 --lr_min 0.001 --optimizer Adam
+python run_uci_crispr_regression.py --seed 6 --dataset power-plant --config configs/uci.yaml --likelihood heteroscedastic --method vi --n_epochs 1000 --lr 0.001 --lr_min 0.001 --optimizer Adam
+python run_uci_crispr_regression.py --seed 6 --dataset power-plant --config configs/uci.yaml --likelihood heteroscedastic --method map --head natural
+python run_uci_crispr_regression.py --seed 6 --dataset power-plant --config configs/uci.yaml --likelihood heteroscedastic --method marglik --head natural
+python run_uci_crispr_regression.py --seed 6 --dataset power-plant --config configs/uci.yaml --likelihood heteroscedastic --method map --head meanvar
+python run_uci_crispr_regression.py --seed 6 --dataset power-plant --config configs/uci.yaml --likelihood heteroscedastic --method marglik --head meanvar
+python run_uci_crispr_regression.py --seed 6 --dataset wine-quality-red --config configs/uci.yaml --likelihood homoscedastic --method map
+python run_uci_crispr_regression.py --seed 6 --dataset wine-quality-red --config configs/uci.yaml --likelihood homoscedastic --method marglik
+python run_uci_crispr_regression.py --seed 6 --dataset wine-quality-red --config configs/uci.yaml --likelihood heteroscedastic --method faithful --head gaussian
+python run_uci_crispr_regression.py --seed 6 --dataset wine-quality-red --config configs/uci.yaml --likelihood heteroscedastic --method betanll --head gaussian --beta 0.0
+python run_uci_crispr_regression.py --seed 6 --dataset wine-quality-red --config configs/uci.yaml --likelihood heteroscedastic --method betanll --head gaussian --beta 0.5
+python run_uci_crispr_regression.py --seed 6 --dataset wine-quality-red --config configs/uci.yaml --likelihood heteroscedastic --method betanll --head gaussian --beta 1.0
+python run_uci_crispr_regression.py --seed 6 --dataset wine-quality-red --config configs/uci.yaml --likelihood heteroscedastic --method mcdropout --n_epochs 1000 --lr 0.001 --lr_min 0.001 --optimizer Adam
+python run_uci_crispr_regression.py --seed 6 --dataset wine-quality-red --config configs/uci.yaml --likelihood heteroscedastic --method vi --n_epochs 1000 --lr 0.001 --lr_min 0.001 --optimizer Adam
+python run_uci_crispr_regression.py --seed 6 --dataset wine-quality-red --config configs/uci.yaml --likelihood heteroscedastic --method map --head natural
+python run_uci_crispr_regression.py --seed 6 --dataset wine-quality-red --config configs/uci.yaml --likelihood heteroscedastic --method marglik --head natural
+python run_uci_crispr_regression.py --seed 6 --dataset wine-quality-red --config configs/uci.yaml --likelihood heteroscedastic --method map --head meanvar
+python run_uci_crispr_regression.py --seed 6 --dataset wine-quality-red --config configs/uci.yaml --likelihood heteroscedastic --method marglik --head meanvar
+python run_uci_crispr_regression.py --seed 6 --dataset yacht --config configs/uci.yaml --likelihood homoscedastic --method map
+python run_uci_crispr_regression.py --seed 6 --dataset yacht --config configs/uci.yaml --likelihood homoscedastic --method marglik
+python run_uci_crispr_regression.py --seed 6 --dataset yacht --config configs/uci.yaml --likelihood heteroscedastic --method faithful --head gaussian
+python run_uci_crispr_regression.py --seed 6 --dataset yacht --config configs/uci.yaml --likelihood heteroscedastic --method betanll --head gaussian --beta 0.0
+python run_uci_crispr_regression.py --seed 6 --dataset yacht --config configs/uci.yaml --likelihood heteroscedastic --method betanll --head gaussian --beta 0.5
+python run_uci_crispr_regression.py --seed 6 --dataset yacht --config configs/uci.yaml --likelihood heteroscedastic --method betanll --head gaussian --beta 1.0
+python run_uci_crispr_regression.py --seed 6 --dataset yacht --config configs/uci.yaml --likelihood heteroscedastic --method mcdropout --n_epochs 1000 --lr 0.001 --lr_min 0.001 --optimizer Adam
+python run_uci_crispr_regression.py --seed 6 --dataset yacht --config configs/uci.yaml --likelihood heteroscedastic --method vi --n_epochs 1000 --lr 0.001 --lr_min 0.001 --optimizer Adam
+python run_uci_crispr_regression.py --seed 6 --dataset yacht --config configs/uci.yaml --likelihood heteroscedastic --method map --head natural
+python run_uci_crispr_regression.py --seed 6 --dataset yacht --config configs/uci.yaml --likelihood heteroscedastic --method marglik --head natural
+python run_uci_crispr_regression.py --seed 6 --dataset yacht --config configs/uci.yaml --likelihood heteroscedastic --method map --head meanvar
+python run_uci_crispr_regression.py --seed 6 --dataset yacht --config configs/uci.yaml --likelihood heteroscedastic --method marglik --head meanvar
+python run_uci_crispr_regression.py --seed 11 --dataset boston-housing --config configs/uci.yaml --likelihood homoscedastic --method map
+python run_uci_crispr_regression.py --seed 11 --dataset boston-housing --config configs/uci.yaml --likelihood homoscedastic --method marglik
+python run_uci_crispr_regression.py --seed 11 --dataset boston-housing --config configs/uci.yaml --likelihood heteroscedastic --method faithful --head gaussian
+python run_uci_crispr_regression.py --seed 11 --dataset boston-housing --config configs/uci.yaml --likelihood heteroscedastic --method betanll --head gaussian --beta 0.0
+python run_uci_crispr_regression.py --seed 11 --dataset boston-housing --config configs/uci.yaml --likelihood heteroscedastic --method betanll --head gaussian --beta 0.5
+python run_uci_crispr_regression.py --seed 11 --dataset boston-housing --config configs/uci.yaml --likelihood heteroscedastic --method betanll --head gaussian --beta 1.0
+python run_uci_crispr_regression.py --seed 11 --dataset boston-housing --config configs/uci.yaml --likelihood heteroscedastic --method mcdropout --n_epochs 1000 --lr 0.001 --lr_min 0.001 --optimizer Adam
+python run_uci_crispr_regression.py --seed 11 --dataset boston-housing --config configs/uci.yaml --likelihood heteroscedastic --method vi --n_epochs 1000 --lr 0.001 --lr_min 0.001 --optimizer Adam
+python run_uci_crispr_regression.py --seed 11 --dataset boston-housing --config configs/uci.yaml --likelihood heteroscedastic --method map --head natural
+python run_uci_crispr_regression.py --seed 11 --dataset boston-housing --config configs/uci.yaml --likelihood heteroscedastic --method marglik --head natural
+python run_uci_crispr_regression.py --seed 11 --dataset boston-housing --config configs/uci.yaml --likelihood heteroscedastic --method map --head meanvar
+python run_uci_crispr_regression.py --seed 11 --dataset boston-housing --config configs/uci.yaml --likelihood heteroscedastic --method marglik --head meanvar
+python run_uci_crispr_regression.py --seed 11 --dataset concrete --config configs/uci.yaml --likelihood homoscedastic --method map
+python run_uci_crispr_regression.py --seed 11 --dataset concrete --config configs/uci.yaml --likelihood homoscedastic --method marglik
+python run_uci_crispr_regression.py --seed 11 --dataset concrete --config configs/uci.yaml --likelihood heteroscedastic --method faithful --head gaussian
+python run_uci_crispr_regression.py --seed 11 --dataset concrete --config configs/uci.yaml --likelihood heteroscedastic --method betanll --head gaussian --beta 0.0
+python run_uci_crispr_regression.py --seed 11 --dataset concrete --config configs/uci.yaml --likelihood heteroscedastic --method betanll --head gaussian --beta 0.5
+python run_uci_crispr_regression.py --seed 11 --dataset concrete --config configs/uci.yaml --likelihood heteroscedastic --method betanll --head gaussian --beta 1.0
+python run_uci_crispr_regression.py --seed 11 --dataset concrete --config configs/uci.yaml --likelihood heteroscedastic --method mcdropout --n_epochs 1000 --lr 0.001 --lr_min 0.001 --optimizer Adam
+python run_uci_crispr_regression.py --seed 11 --dataset concrete --config configs/uci.yaml --likelihood heteroscedastic --method vi --n_epochs 1000 --lr 0.001 --lr_min 0.001 --optimizer Adam
+python run_uci_crispr_regression.py --seed 11 --dataset concrete --config configs/uci.yaml --likelihood heteroscedastic --method map --head natural
+python run_uci_crispr_regression.py --seed 11 --dataset concrete --config configs/uci.yaml --likelihood heteroscedastic --method marglik --head natural
+python run_uci_crispr_regression.py --seed 11 --dataset concrete --config configs/uci.yaml --likelihood heteroscedastic --method map --head meanvar
+python run_uci_crispr_regression.py --seed 11 --dataset concrete --config configs/uci.yaml --likelihood heteroscedastic --method marglik --head meanvar
+python run_uci_crispr_regression.py --seed 11 --dataset energy --config configs/uci.yaml --likelihood homoscedastic --method map
+python run_uci_crispr_regression.py --seed 11 --dataset energy --config configs/uci.yaml --likelihood homoscedastic --method marglik
+python run_uci_crispr_regression.py --seed 11 --dataset energy --config configs/uci.yaml --likelihood heteroscedastic --method faithful --head gaussian
+python run_uci_crispr_regression.py --seed 11 --dataset energy --config configs/uci.yaml --likelihood heteroscedastic --method betanll --head gaussian --beta 0.0
+python run_uci_crispr_regression.py --seed 11 --dataset energy --config configs/uci.yaml --likelihood heteroscedastic --method betanll --head gaussian --beta 0.5
+python run_uci_crispr_regression.py --seed 11 --dataset energy --config configs/uci.yaml --likelihood heteroscedastic --method betanll --head gaussian --beta 1.0
+python run_uci_crispr_regression.py --seed 11 --dataset energy --config configs/uci.yaml --likelihood heteroscedastic --method mcdropout --n_epochs 1000 --lr 0.001 --lr_min 0.001 --optimizer Adam
+python run_uci_crispr_regression.py --seed 11 --dataset energy --config configs/uci.yaml --likelihood heteroscedastic --method vi --n_epochs 1000 --lr 0.001 --lr_min 0.001 --optimizer Adam
+python run_uci_crispr_regression.py --seed 11 --dataset energy --config configs/uci.yaml --likelihood heteroscedastic --method map --head natural
+python run_uci_crispr_regression.py --seed 11 --dataset energy --config configs/uci.yaml --likelihood heteroscedastic --method marglik --head natural
+python run_uci_crispr_regression.py --seed 11 --dataset energy --config configs/uci.yaml --likelihood heteroscedastic --method map --head meanvar
+python run_uci_crispr_regression.py --seed 11 --dataset energy --config configs/uci.yaml --likelihood heteroscedastic --method marglik --head meanvar
+python run_uci_crispr_regression.py --seed 11 --dataset kin8nm --config configs/uci.yaml --likelihood homoscedastic --method map
+python run_uci_crispr_regression.py --seed 11 --dataset kin8nm --config configs/uci.yaml --likelihood homoscedastic --method marglik
+python run_uci_crispr_regression.py --seed 11 --dataset kin8nm --config configs/uci.yaml --likelihood heteroscedastic --method faithful --head gaussian
+python run_uci_crispr_regression.py --seed 11 --dataset kin8nm --config configs/uci.yaml --likelihood heteroscedastic --method betanll --head gaussian --beta 0.0
+python run_uci_crispr_regression.py --seed 11 --dataset kin8nm --config configs/uci.yaml --likelihood heteroscedastic --method betanll --head gaussian --beta 0.5
+python run_uci_crispr_regression.py --seed 11 --dataset kin8nm --config configs/uci.yaml --likelihood heteroscedastic --method betanll --head gaussian --beta 1.0
+python run_uci_crispr_regression.py --seed 11 --dataset kin8nm --config configs/uci.yaml --likelihood heteroscedastic --method mcdropout --n_epochs 1000 --lr 0.001 --lr_min 0.001 --optimizer Adam
+python run_uci_crispr_regression.py --seed 11 --dataset kin8nm --config configs/uci.yaml --likelihood heteroscedastic --method vi --n_epochs 1000 --lr 0.001 --lr_min 0.001 --optimizer Adam
+python run_uci_crispr_regression.py --seed 11 --dataset kin8nm --config configs/uci.yaml --likelihood heteroscedastic --method map --head natural
+python run_uci_crispr_regression.py --seed 11 --dataset kin8nm --config configs/uci.yaml --likelihood heteroscedastic --method marglik --head natural
+python run_uci_crispr_regression.py --seed 11 --dataset kin8nm --config configs/uci.yaml --likelihood heteroscedastic --method map --head meanvar
+python run_uci_crispr_regression.py --seed 11 --dataset kin8nm --config configs/uci.yaml --likelihood heteroscedastic --method marglik --head meanvar
+python run_uci_crispr_regression.py --seed 11 --dataset naval-propulsion-plant --config configs/uci.yaml --likelihood homoscedastic --method map
+python run_uci_crispr_regression.py --seed 11 --dataset naval-propulsion-plant --config configs/uci.yaml --likelihood homoscedastic --method marglik
+python run_uci_crispr_regression.py --seed 11 --dataset naval-propulsion-plant --config configs/uci.yaml --likelihood heteroscedastic --method faithful --head gaussian
+python run_uci_crispr_regression.py --seed 11 --dataset naval-propulsion-plant --config configs/uci.yaml --likelihood heteroscedastic --method betanll --head gaussian --beta 0.0
+python run_uci_crispr_regression.py --seed 11 --dataset naval-propulsion-plant --config configs/uci.yaml --likelihood heteroscedastic --method betanll --head gaussian --beta 0.5
+python run_uci_crispr_regression.py --seed 11 --dataset naval-propulsion-plant --config configs/uci.yaml --likelihood heteroscedastic --method betanll --head gaussian --beta 1.0
+python run_uci_crispr_regression.py --seed 11 --dataset naval-propulsion-plant --config configs/uci.yaml --likelihood heteroscedastic --method mcdropout --n_epochs 1000 --lr 0.001 --lr_min 0.001 --optimizer Adam
+python run_uci_crispr_regression.py --seed 11 --dataset naval-propulsion-plant --config configs/uci.yaml --likelihood heteroscedastic --method vi --n_epochs 1000 --lr 0.001 --lr_min 0.001 --optimizer Adam
+python run_uci_crispr_regression.py --seed 11 --dataset naval-propulsion-plant --config configs/uci.yaml --likelihood heteroscedastic --method map --head natural
+python run_uci_crispr_regression.py --seed 11 --dataset naval-propulsion-plant --config configs/uci.yaml --likelihood heteroscedastic --method marglik --head natural
+python run_uci_crispr_regression.py --seed 11 --dataset naval-propulsion-plant --config configs/uci.yaml --likelihood heteroscedastic --method map --head meanvar
+python run_uci_crispr_regression.py --seed 11 --dataset naval-propulsion-plant --config configs/uci.yaml --likelihood heteroscedastic --method marglik --head meanvar
+python run_uci_crispr_regression.py --seed 11 --dataset power-plant --config configs/uci.yaml --likelihood homoscedastic --method map
+python run_uci_crispr_regression.py --seed 11 --dataset power-plant --config configs/uci.yaml --likelihood homoscedastic --method marglik
+python run_uci_crispr_regression.py --seed 11 --dataset power-plant --config configs/uci.yaml --likelihood heteroscedastic --method faithful --head gaussian
+python run_uci_crispr_regression.py --seed 11 --dataset power-plant --config configs/uci.yaml --likelihood heteroscedastic --method betanll --head gaussian --beta 0.0
+python run_uci_crispr_regression.py --seed 11 --dataset power-plant --config configs/uci.yaml --likelihood heteroscedastic --method betanll --head gaussian --beta 0.5
+python run_uci_crispr_regression.py --seed 11 --dataset power-plant --config configs/uci.yaml --likelihood heteroscedastic --method betanll --head gaussian --beta 1.0
+python run_uci_crispr_regression.py --seed 11 --dataset power-plant --config configs/uci.yaml --likelihood heteroscedastic --method mcdropout --n_epochs 1000 --lr 0.001 --lr_min 0.001 --optimizer Adam
+python run_uci_crispr_regression.py --seed 11 --dataset power-plant --config configs/uci.yaml --likelihood heteroscedastic --method vi --n_epochs 1000 --lr 0.001 --lr_min 0.001 --optimizer Adam
+python run_uci_crispr_regression.py --seed 11 --dataset power-plant --config configs/uci.yaml --likelihood heteroscedastic --method map --head natural
+python run_uci_crispr_regression.py --seed 11 --dataset power-plant --config configs/uci.yaml --likelihood heteroscedastic --method marglik --head natural
+python run_uci_crispr_regression.py --seed 11 --dataset power-plant --config configs/uci.yaml --likelihood heteroscedastic --method map --head meanvar
+python run_uci_crispr_regression.py --seed 11 --dataset power-plant --config configs/uci.yaml --likelihood heteroscedastic --method marglik --head meanvar
+python run_uci_crispr_regression.py --seed 11 --dataset wine-quality-red --config configs/uci.yaml --likelihood homoscedastic --method map
+python run_uci_crispr_regression.py --seed 11 --dataset wine-quality-red --config configs/uci.yaml --likelihood homoscedastic --method marglik
+python run_uci_crispr_regression.py --seed 11 --dataset wine-quality-red --config configs/uci.yaml --likelihood heteroscedastic --method faithful --head gaussian
+python run_uci_crispr_regression.py --seed 11 --dataset wine-quality-red --config configs/uci.yaml --likelihood heteroscedastic --method betanll --head gaussian --beta 0.0
+python run_uci_crispr_regression.py --seed 11 --dataset wine-quality-red --config configs/uci.yaml --likelihood heteroscedastic --method betanll --head gaussian --beta 0.5
+python run_uci_crispr_regression.py --seed 11 --dataset wine-quality-red --config configs/uci.yaml --likelihood heteroscedastic --method betanll --head gaussian --beta 1.0
+python run_uci_crispr_regression.py --seed 11 --dataset wine-quality-red --config configs/uci.yaml --likelihood heteroscedastic --method mcdropout --n_epochs 1000 --lr 0.001 --lr_min 0.001 --optimizer Adam
+python run_uci_crispr_regression.py --seed 11 --dataset wine-quality-red --config configs/uci.yaml --likelihood heteroscedastic --method vi --n_epochs 1000 --lr 0.001 --lr_min 0.001 --optimizer Adam
+python run_uci_crispr_regression.py --seed 11 --dataset wine-quality-red --config configs/uci.yaml --likelihood heteroscedastic --method map --head natural
+python run_uci_crispr_regression.py --seed 11 --dataset wine-quality-red --config configs/uci.yaml --likelihood heteroscedastic --method marglik --head natural
+python run_uci_crispr_regression.py --seed 11 --dataset wine-quality-red --config configs/uci.yaml --likelihood heteroscedastic --method map --head meanvar
+python run_uci_crispr_regression.py --seed 11 --dataset wine-quality-red --config configs/uci.yaml --likelihood heteroscedastic --method marglik --head meanvar
+python run_uci_crispr_regression.py --seed 11 --dataset yacht --config configs/uci.yaml --likelihood homoscedastic --method map
+python run_uci_crispr_regression.py --seed 11 --dataset yacht --config configs/uci.yaml --likelihood homoscedastic --method marglik
+python run_uci_crispr_regression.py --seed 11 --dataset yacht --config configs/uci.yaml --likelihood heteroscedastic --method faithful --head gaussian
+python run_uci_crispr_regression.py --seed 11 --dataset yacht --config configs/uci.yaml --likelihood heteroscedastic --method betanll --head gaussian --beta 0.0
+python run_uci_crispr_regression.py --seed 11 --dataset yacht --config configs/uci.yaml --likelihood heteroscedastic --method betanll --head gaussian --beta 0.5
+python run_uci_crispr_regression.py --seed 11 --dataset yacht --config configs/uci.yaml --likelihood heteroscedastic --method betanll --head gaussian --beta 1.0
+python run_uci_crispr_regression.py --seed 11 --dataset yacht --config configs/uci.yaml --likelihood heteroscedastic --method mcdropout --n_epochs 1000 --lr 0.001 --lr_min 0.001 --optimizer Adam
+python run_uci_crispr_regression.py --seed 11 --dataset yacht --config configs/uci.yaml --likelihood heteroscedastic --method vi --n_epochs 1000 --lr 0.001 --lr_min 0.001 --optimizer Adam
+python run_uci_crispr_regression.py --seed 11 --dataset yacht --config configs/uci.yaml --likelihood heteroscedastic --method map --head natural
+python run_uci_crispr_regression.py --seed 11 --dataset yacht --config configs/uci.yaml --likelihood heteroscedastic --method marglik --head natural
+python run_uci_crispr_regression.py --seed 11 --dataset yacht --config configs/uci.yaml --likelihood heteroscedastic --method map --head meanvar
+python run_uci_crispr_regression.py --seed 11 --dataset yacht --config configs/uci.yaml --likelihood heteroscedastic --method marglik --head meanvar
+python run_uci_crispr_regression.py --seed 16 --dataset boston-housing --config configs/uci.yaml --likelihood homoscedastic --method map
+python run_uci_crispr_regression.py --seed 16 --dataset boston-housing --config configs/uci.yaml --likelihood homoscedastic --method marglik
+python run_uci_crispr_regression.py --seed 16 --dataset boston-housing --config configs/uci.yaml --likelihood heteroscedastic --method faithful --head gaussian
+python run_uci_crispr_regression.py --seed 16 --dataset boston-housing --config configs/uci.yaml --likelihood heteroscedastic --method betanll --head gaussian --beta 0.0
+python run_uci_crispr_regression.py --seed 16 --dataset boston-housing --config configs/uci.yaml --likelihood heteroscedastic --method betanll --head gaussian --beta 0.5
+python run_uci_crispr_regression.py --seed 16 --dataset boston-housing --config configs/uci.yaml --likelihood heteroscedastic --method betanll --head gaussian --beta 1.0
+python run_uci_crispr_regression.py --seed 16 --dataset boston-housing --config configs/uci.yaml --likelihood heteroscedastic --method mcdropout --n_epochs 1000 --lr 0.001 --lr_min 0.001 --optimizer Adam
+python run_uci_crispr_regression.py --seed 16 --dataset boston-housing --config configs/uci.yaml --likelihood heteroscedastic --method vi --n_epochs 1000 --lr 0.001 --lr_min 0.001 --optimizer Adam
+python run_uci_crispr_regression.py --seed 16 --dataset boston-housing --config configs/uci.yaml --likelihood heteroscedastic --method map --head natural
+python run_uci_crispr_regression.py --seed 16 --dataset boston-housing --config configs/uci.yaml --likelihood heteroscedastic --method marglik --head natural
+python run_uci_crispr_regression.py --seed 16 --dataset boston-housing --config configs/uci.yaml --likelihood heteroscedastic --method map --head meanvar
+python run_uci_crispr_regression.py --seed 16 --dataset boston-housing --config configs/uci.yaml --likelihood heteroscedastic --method marglik --head meanvar
+python run_uci_crispr_regression.py --seed 16 --dataset concrete --config configs/uci.yaml --likelihood homoscedastic --method map
+python run_uci_crispr_regression.py --seed 16 --dataset concrete --config configs/uci.yaml --likelihood homoscedastic --method marglik
+python run_uci_crispr_regression.py --seed 16 --dataset concrete --config configs/uci.yaml --likelihood heteroscedastic --method faithful --head gaussian
+python run_uci_crispr_regression.py --seed 16 --dataset concrete --config configs/uci.yaml --likelihood heteroscedastic --method betanll --head gaussian --beta 0.0
+python run_uci_crispr_regression.py --seed 16 --dataset concrete --config configs/uci.yaml --likelihood heteroscedastic --method betanll --head gaussian --beta 0.5
+python run_uci_crispr_regression.py --seed 16 --dataset concrete --config configs/uci.yaml --likelihood heteroscedastic --method betanll --head gaussian --beta 1.0
+python run_uci_crispr_regression.py --seed 16 --dataset concrete --config configs/uci.yaml --likelihood heteroscedastic --method mcdropout --n_epochs 1000 --lr 0.001 --lr_min 0.001 --optimizer Adam
+python run_uci_crispr_regression.py --seed 16 --dataset concrete --config configs/uci.yaml --likelihood heteroscedastic --method vi --n_epochs 1000 --lr 0.001 --lr_min 0.001 --optimizer Adam
+python run_uci_crispr_regression.py --seed 16 --dataset concrete --config configs/uci.yaml --likelihood heteroscedastic --method map --head natural
+python run_uci_crispr_regression.py --seed 16 --dataset concrete --config configs/uci.yaml --likelihood heteroscedastic --method marglik --head natural
+python run_uci_crispr_regression.py --seed 16 --dataset concrete --config configs/uci.yaml --likelihood heteroscedastic --method map --head meanvar
+python run_uci_crispr_regression.py --seed 16 --dataset concrete --config configs/uci.yaml --likelihood heteroscedastic --method marglik --head meanvar
+python run_uci_crispr_regression.py --seed 16 --dataset energy --config configs/uci.yaml --likelihood homoscedastic --method map
+python run_uci_crispr_regression.py --seed 16 --dataset energy --config configs/uci.yaml --likelihood homoscedastic --method marglik
+python run_uci_crispr_regression.py --seed 16 --dataset energy --config configs/uci.yaml --likelihood heteroscedastic --method faithful --head gaussian
+python run_uci_crispr_regression.py --seed 16 --dataset energy --config configs/uci.yaml --likelihood heteroscedastic --method betanll --head gaussian --beta 0.0
+python run_uci_crispr_regression.py --seed 16 --dataset energy --config configs/uci.yaml --likelihood heteroscedastic --method betanll --head gaussian --beta 0.5
+python run_uci_crispr_regression.py --seed 16 --dataset energy --config configs/uci.yaml --likelihood heteroscedastic --method betanll --head gaussian --beta 1.0
+python run_uci_crispr_regression.py --seed 16 --dataset energy --config configs/uci.yaml --likelihood heteroscedastic --method mcdropout --n_epochs 1000 --lr 0.001 --lr_min 0.001 --optimizer Adam
+python run_uci_crispr_regression.py --seed 16 --dataset energy --config configs/uci.yaml --likelihood heteroscedastic --method vi --n_epochs 1000 --lr 0.001 --lr_min 0.001 --optimizer Adam
+python run_uci_crispr_regression.py --seed 16 --dataset energy --config configs/uci.yaml --likelihood heteroscedastic --method map --head natural
+python run_uci_crispr_regression.py --seed 16 --dataset energy --config configs/uci.yaml --likelihood heteroscedastic --method marglik --head natural
+python run_uci_crispr_regression.py --seed 16 --dataset energy --config configs/uci.yaml --likelihood heteroscedastic --method map --head meanvar
+python run_uci_crispr_regression.py --seed 16 --dataset energy --config configs/uci.yaml --likelihood heteroscedastic --method marglik --head meanvar
+python run_uci_crispr_regression.py --seed 16 --dataset kin8nm --config configs/uci.yaml --likelihood homoscedastic --method map
+python run_uci_crispr_regression.py --seed 16 --dataset kin8nm --config configs/uci.yaml --likelihood homoscedastic --method marglik
+python run_uci_crispr_regression.py --seed 16 --dataset kin8nm --config configs/uci.yaml --likelihood heteroscedastic --method faithful --head gaussian
+python run_uci_crispr_regression.py --seed 16 --dataset kin8nm --config configs/uci.yaml --likelihood heteroscedastic --method betanll --head gaussian --beta 0.0
+python run_uci_crispr_regression.py --seed 16 --dataset kin8nm --config configs/uci.yaml --likelihood heteroscedastic --method betanll --head gaussian --beta 0.5
+python run_uci_crispr_regression.py --seed 16 --dataset kin8nm --config configs/uci.yaml --likelihood heteroscedastic --method betanll --head gaussian --beta 1.0
+python run_uci_crispr_regression.py --seed 16 --dataset kin8nm --config configs/uci.yaml --likelihood heteroscedastic --method mcdropout --n_epochs 1000 --lr 0.001 --lr_min 0.001 --optimizer Adam
+python run_uci_crispr_regression.py --seed 16 --dataset kin8nm --config configs/uci.yaml --likelihood heteroscedastic --method vi --n_epochs 1000 --lr 0.001 --lr_min 0.001 --optimizer Adam
+python run_uci_crispr_regression.py --seed 16 --dataset kin8nm --config configs/uci.yaml --likelihood heteroscedastic --method map --head natural
+python run_uci_crispr_regression.py --seed 16 --dataset kin8nm --config configs/uci.yaml --likelihood heteroscedastic --method marglik --head natural
+python run_uci_crispr_regression.py --seed 16 --dataset kin8nm --config configs/uci.yaml --likelihood heteroscedastic --method map --head meanvar
+python run_uci_crispr_regression.py --seed 16 --dataset kin8nm --config configs/uci.yaml --likelihood heteroscedastic --method marglik --head meanvar
+python run_uci_crispr_regression.py --seed 16 --dataset naval-propulsion-plant --config configs/uci.yaml --likelihood homoscedastic --method map
+python run_uci_crispr_regression.py --seed 16 --dataset naval-propulsion-plant --config configs/uci.yaml --likelihood homoscedastic --method marglik
+python run_uci_crispr_regression.py --seed 16 --dataset naval-propulsion-plant --config configs/uci.yaml --likelihood heteroscedastic --method faithful --head gaussian
+python run_uci_crispr_regression.py --seed 16 --dataset naval-propulsion-plant --config configs/uci.yaml --likelihood heteroscedastic --method betanll --head gaussian --beta 0.0
+python run_uci_crispr_regression.py --seed 16 --dataset naval-propulsion-plant --config configs/uci.yaml --likelihood heteroscedastic --method betanll --head gaussian --beta 0.5
+python run_uci_crispr_regression.py --seed 16 --dataset naval-propulsion-plant --config configs/uci.yaml --likelihood heteroscedastic --method betanll --head gaussian --beta 1.0
+python run_uci_crispr_regression.py --seed 16 --dataset naval-propulsion-plant --config configs/uci.yaml --likelihood heteroscedastic --method mcdropout --n_epochs 1000 --lr 0.001 --lr_min 0.001 --optimizer Adam
+python run_uci_crispr_regression.py --seed 16 --dataset naval-propulsion-plant --config configs/uci.yaml --likelihood heteroscedastic --method vi --n_epochs 1000 --lr 0.001 --lr_min 0.001 --optimizer Adam
+python run_uci_crispr_regression.py --seed 16 --dataset naval-propulsion-plant --config configs/uci.yaml --likelihood heteroscedastic --method map --head natural
+python run_uci_crispr_regression.py --seed 16 --dataset naval-propulsion-plant --config configs/uci.yaml --likelihood heteroscedastic --method marglik --head natural
+python run_uci_crispr_regression.py --seed 16 --dataset naval-propulsion-plant --config configs/uci.yaml --likelihood heteroscedastic --method map --head meanvar
+python run_uci_crispr_regression.py --seed 16 --dataset naval-propulsion-plant --config configs/uci.yaml --likelihood heteroscedastic --method marglik --head meanvar
+python run_uci_crispr_regression.py --seed 16 --dataset power-plant --config configs/uci.yaml --likelihood homoscedastic --method map
+python run_uci_crispr_regression.py --seed 16 --dataset power-plant --config configs/uci.yaml --likelihood homoscedastic --method marglik
+python run_uci_crispr_regression.py --seed 16 --dataset power-plant --config configs/uci.yaml --likelihood heteroscedastic --method faithful --head gaussian
+python run_uci_crispr_regression.py --seed 16 --dataset power-plant --config configs/uci.yaml --likelihood heteroscedastic --method betanll --head gaussian --beta 0.0
+python run_uci_crispr_regression.py --seed 16 --dataset power-plant --config configs/uci.yaml --likelihood heteroscedastic --method betanll --head gaussian --beta 0.5
+python run_uci_crispr_regression.py --seed 16 --dataset power-plant --config configs/uci.yaml --likelihood heteroscedastic --method betanll --head gaussian --beta 1.0
+python run_uci_crispr_regression.py --seed 16 --dataset power-plant --config configs/uci.yaml --likelihood heteroscedastic --method mcdropout --n_epochs 1000 --lr 0.001 --lr_min 0.001 --optimizer Adam
+python run_uci_crispr_regression.py --seed 16 --dataset power-plant --config configs/uci.yaml --likelihood heteroscedastic --method vi --n_epochs 1000 --lr 0.001 --lr_min 0.001 --optimizer Adam
+python run_uci_crispr_regression.py --seed 16 --dataset power-plant --config configs/uci.yaml --likelihood heteroscedastic --method map --head natural
+python run_uci_crispr_regression.py --seed 16 --dataset power-plant --config configs/uci.yaml --likelihood heteroscedastic --method marglik --head natural
+python run_uci_crispr_regression.py --seed 16 --dataset power-plant --config configs/uci.yaml --likelihood heteroscedastic --method map --head meanvar
+python run_uci_crispr_regression.py --seed 16 --dataset power-plant --config configs/uci.yaml --likelihood heteroscedastic --method marglik --head meanvar
+python run_uci_crispr_regression.py --seed 16 --dataset wine-quality-red --config configs/uci.yaml --likelihood homoscedastic --method map
+python run_uci_crispr_regression.py --seed 16 --dataset wine-quality-red --config configs/uci.yaml --likelihood homoscedastic --method marglik
+python run_uci_crispr_regression.py --seed 16 --dataset wine-quality-red --config configs/uci.yaml --likelihood heteroscedastic --method faithful --head gaussian
+python run_uci_crispr_regression.py --seed 16 --dataset wine-quality-red --config configs/uci.yaml --likelihood heteroscedastic --method betanll --head gaussian --beta 0.0
+python run_uci_crispr_regression.py --seed 16 --dataset wine-quality-red --config configs/uci.yaml --likelihood heteroscedastic --method betanll --head gaussian --beta 0.5
+python run_uci_crispr_regression.py --seed 16 --dataset wine-quality-red --config configs/uci.yaml --likelihood heteroscedastic --method betanll --head gaussian --beta 1.0
+python run_uci_crispr_regression.py --seed 16 --dataset wine-quality-red --config configs/uci.yaml --likelihood heteroscedastic --method mcdropout --n_epochs 1000 --lr 0.001 --lr_min 0.001 --optimizer Adam
+python run_uci_crispr_regression.py --seed 16 --dataset wine-quality-red --config configs/uci.yaml --likelihood heteroscedastic --method vi --n_epochs 1000 --lr 0.001 --lr_min 0.001 --optimizer Adam
+python run_uci_crispr_regression.py --seed 16 --dataset wine-quality-red --config configs/uci.yaml --likelihood heteroscedastic --method map --head natural
+python run_uci_crispr_regression.py --seed 16 --dataset wine-quality-red --config configs/uci.yaml --likelihood heteroscedastic --method marglik --head natural
+python run_uci_crispr_regression.py --seed 16 --dataset wine-quality-red --config configs/uci.yaml --likelihood heteroscedastic --method map --head meanvar
+python run_uci_crispr_regression.py --seed 16 --dataset wine-quality-red --config configs/uci.yaml --likelihood heteroscedastic --method marglik --head meanvar
+python run_uci_crispr_regression.py --seed 16 --dataset yacht --config configs/uci.yaml --likelihood homoscedastic --method map
+python run_uci_crispr_regression.py --seed 16 --dataset yacht --config configs/uci.yaml --likelihood homoscedastic --method marglik
+python run_uci_crispr_regression.py --seed 16 --dataset yacht --config configs/uci.yaml --likelihood heteroscedastic --method faithful --head gaussian
+python run_uci_crispr_regression.py --seed 16 --dataset yacht --config configs/uci.yaml --likelihood heteroscedastic --method betanll --head gaussian --beta 0.0
+python run_uci_crispr_regression.py --seed 16 --dataset yacht --config configs/uci.yaml --likelihood heteroscedastic --method betanll --head gaussian --beta 0.5
+python run_uci_crispr_regression.py --seed 16 --dataset yacht --config configs/uci.yaml --likelihood heteroscedastic --method betanll --head gaussian --beta 1.0
+python run_uci_crispr_regression.py --seed 16 --dataset yacht --config configs/uci.yaml --likelihood heteroscedastic --method mcdropout --n_epochs 1000 --lr 0.001 --lr_min 0.001 --optimizer Adam
+python run_uci_crispr_regression.py --seed 16 --dataset yacht --config configs/uci.yaml --likelihood heteroscedastic --method vi --n_epochs 1000 --lr 0.001 --lr_min 0.001 --optimizer Adam
+python run_uci_crispr_regression.py --seed 16 --dataset yacht --config configs/uci.yaml --likelihood heteroscedastic --method map --head natural
+python run_uci_crispr_regression.py --seed 16 --dataset yacht --config configs/uci.yaml --likelihood heteroscedastic --method marglik --head natural
+python run_uci_crispr_regression.py --seed 16 --dataset yacht --config configs/uci.yaml --likelihood heteroscedastic --method map --head meanvar
+python run_uci_crispr_regression.py --seed 16 --dataset yacht --config configs/uci.yaml --likelihood heteroscedastic --method marglik --head meanvar
