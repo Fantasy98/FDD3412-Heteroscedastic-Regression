@@ -69,3 +69,50 @@ python run_image_regression.py --seed 189 --config configs/fmnist.yaml --het_noi
 python run_image_regression.py --seed 189 --config configs/fmnist.yaml --het_noise neither --likelihood heteroscedastic --method map --head natural
 python run_image_regression.py --seed 189 --config configs/fmnist.yaml --het_noise neither --likelihood heteroscedastic --method marglik --head natural
 python run_image_regression.py --seed 189 --config configs/fmnist.yaml --het_noise neither --likelihood heteroscedastic --method map --head meanvar
+python run_image_regression.py --seed 189 --config configs/fmnist.yaml --het_noise neither --likelihood heteroscedastic --method marglik --head meanvar
+python run_image_regression.py --seed 189 --config configs/cifar10.yaml --het_noise label --likelihood homoscedastic --method map
+python run_image_regression.py --seed 189 --config configs/cifar10.yaml --het_noise label --likelihood homoscedastic --method marglik
+python run_image_regression.py --seed 189 --config configs/cifar10.yaml --het_noise label --likelihood heteroscedastic --method faithful --head gaussian
+python run_image_regression.py --seed 189 --config configs/cifar10.yaml --het_noise label --likelihood heteroscedastic --method betanll --head gaussian --beta 0.0
+python run_image_regression.py --seed 189 --config configs/cifar10.yaml --het_noise label --likelihood heteroscedastic --method betanll --head gaussian --beta 0.5
+python run_image_regression.py --seed 189 --config configs/cifar10.yaml --het_noise label --likelihood heteroscedastic --method betanll --head gaussian --beta 1.0
+python run_image_regression.py --seed 189 --config configs/cifar10.yaml --het_noise label --likelihood heteroscedastic --method mcdropout --n_epochs 50 --lr 0.01 --lr_min 0.01 --optimizer Adam
+python run_image_regression.py --seed 189 --config configs/cifar10.yaml --het_noise label --likelihood heteroscedastic --method vi --lr 0.001 --lr_min 1e-05 --optimizer Adam --vi-posterior-rho-init -3.0
+python run_image_regression.py --seed 189 --config configs/cifar10.yaml --het_noise label --likelihood heteroscedastic --method map --head natural
+python run_image_regression.py --seed 189 --config configs/cifar10.yaml --het_noise label --likelihood heteroscedastic --method marglik --head natural
+python run_image_regression.py --seed 189 --config configs/cifar10.yaml --het_noise label --likelihood heteroscedastic --method map --head meanvar
+python run_image_regression.py --seed 189 --config configs/cifar10.yaml --het_noise label --likelihood heteroscedastic --method marglik --head meanvar
+python run_image_regression.py --seed 189 --config configs/cifar10.yaml --het_noise rotation --likelihood homoscedastic --method map
+python run_image_regression.py --seed 189 --config configs/cifar10.yaml --het_noise rotation --likelihood homoscedastic --method marglik
+python run_image_regression.py --seed 189 --config configs/cifar10.yaml --het_noise rotation --likelihood heteroscedastic --method faithful --head gaussian
+python run_image_regression.py --seed 189 --config configs/cifar10.yaml --het_noise rotation --likelihood heteroscedastic --method betanll --head gaussian --beta 0.0
+python run_image_regression.py --seed 189 --config configs/cifar10.yaml --het_noise rotation --likelihood heteroscedastic --method betanll --head gaussian --beta 0.5
+python run_image_regression.py --seed 189 --config configs/cifar10.yaml --het_noise rotation --likelihood heteroscedastic --method betanll --head gaussian --beta 1.0
+python run_image_regression.py --seed 189 --config configs/cifar10.yaml --het_noise rotation --likelihood heteroscedastic --method mcdropout --n_epochs 50 --lr 0.01 --lr_min 0.01 --optimizer Adam
+python run_image_regression.py --seed 189 --config configs/cifar10.yaml --het_noise rotation --likelihood heteroscedastic --method vi --lr 0.001 --lr_min 1e-05 --optimizer Adam --vi-posterior-rho-init -3.0
+python run_image_regression.py --seed 189 --config configs/cifar10.yaml --het_noise rotation --likelihood heteroscedastic --method map --head natural
+python run_image_regression.py --seed 189 --config configs/cifar10.yaml --het_noise rotation --likelihood heteroscedastic --method marglik --head natural
+python run_image_regression.py --seed 189 --config configs/cifar10.yaml --het_noise rotation --likelihood heteroscedastic --method map --head meanvar
+python run_image_regression.py --seed 189 --config configs/cifar10.yaml --het_noise rotation --likelihood heteroscedastic --method marglik --head meanvar
+python run_image_regression.py --seed 189 --config configs/cifar10.yaml --het_noise neither --likelihood homoscedastic --method map
+python run_image_regression.py --seed 189 --config configs/cifar10.yaml --het_noise neither --likelihood homoscedastic --method marglik
+python run_image_regression.py --seed 189 --config configs/cifar10.yaml --het_noise neither --likelihood heteroscedastic --method faithful --head gaussian
+python run_image_regression.py --seed 189 --config configs/cifar10.yaml --het_noise neither --likelihood heteroscedastic --method betanll --head gaussian --beta 0.0
+python run_image_regression.py --seed 189 --config configs/cifar10.yaml --het_noise neither --likelihood heteroscedastic --method betanll --head gaussian --beta 0.5
+python run_image_regression.py --seed 189 --config configs/cifar10.yaml --het_noise neither --likelihood heteroscedastic --method betanll --head gaussian --beta 1.0
+python run_image_regression.py --seed 189 --config configs/cifar10.yaml --het_noise neither --likelihood heteroscedastic --method mcdropout --n_epochs 50 --lr 0.01 --lr_min 0.01 --optimizer Adam
+python run_image_regression.py --seed 189 --config configs/cifar10.yaml --het_noise neither --likelihood heteroscedastic --method vi --lr 0.001 --lr_min 1e-05 --optimizer Adam --vi-posterior-rho-init -3.0
+python run_image_regression.py --seed 189 --config configs/cifar10.yaml --het_noise neither --likelihood heteroscedastic --method map --head natural
+python run_image_regression.py --seed 189 --config configs/cifar10.yaml --het_noise neither --likelihood heteroscedastic --method marglik --head natural
+python run_image_regression.py --seed 189 --config configs/cifar10.yaml --het_noise neither --likelihood heteroscedastic --method map --head meanvar
+python run_image_regression.py --seed 189 --config configs/cifar10.yaml --het_noise neither --likelihood heteroscedastic --method marglik --head meanvar
+python run_image_regression.py --seed 711 --config configs/mnist.yaml --het_noise label --likelihood homoscedastic --method map
+python run_image_regression.py --seed 711 --config configs/mnist.yaml --het_noise label --likelihood homoscedastic --method marglik
+python run_image_regression.py --seed 711 --config configs/mnist.yaml --het_noise label --likelihood heteroscedastic --method faithful --head gaussian
+python run_image_regression.py --seed 711 --config configs/mnist.yaml --het_noise label --likelihood heteroscedastic --method betanll --head gaussian --beta 0.0
+python run_image_regression.py --seed 711 --config configs/mnist.yaml --het_noise label --likelihood heteroscedastic --method betanll --head gaussian --beta 0.5
+python run_image_regression.py --seed 711 --config configs/mnist.yaml --het_noise label --likelihood heteroscedastic --method betanll --head gaussian --beta 1.0
+python run_image_regression.py --seed 711 --config configs/mnist.yaml --het_noise label --likelihood heteroscedastic --method mcdropout --n_epochs 50 --lr 0.01 --lr_min 0.01 --optimizer Adam
+python run_image_regression.py --seed 711 --config configs/mnist.yaml --het_noise label --likelihood heteroscedastic --method vi --lr 0.001 --lr_min 1e-05 --optimizer Adam --vi-posterior-rho-init -3.0
+python run_image_regression.py --seed 711 --config configs/mnist.yaml --het_noise label --likelihood heteroscedastic --method map --head natural
+python run_image_regression.py --seed 711 --config configs/mnist.yaml --het_noise label --likelihood heteroscedastic --method marglik --head natural

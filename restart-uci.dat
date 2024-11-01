@@ -63,3 +63,7 @@ python run_uci_crispr_regression.py --seed 1 --dataset power-plant --config conf
 python run_uci_crispr_regression.py --seed 1 --dataset power-plant --config configs/uci.yaml --likelihood heteroscedastic --method faithful --head gaussian
 python run_uci_crispr_regression.py --seed 1 --dataset power-plant --config configs/uci.yaml --likelihood heteroscedastic --method betanll --head gaussian --beta 0.0
 python run_uci_crispr_regression.py --seed 1 --dataset power-plant --config configs/uci.yaml --likelihood heteroscedastic --method betanll --head gaussian --beta 0.5
+python run_uci_crispr_regression.py --seed 1 --dataset power-plant --config configs/uci.yaml --likelihood heteroscedastic --method betanll --head gaussian --beta 1.0
+python run_uci_crispr_regression.py --seed 1 --dataset power-plant --config configs/uci.yaml --likelihood heteroscedastic --method mcdropout --n_epochs 1000 --lr 0.001 --lr_min 0.001 --optimizer Adam
+python run_uci_crispr_regression.py --seed 1 --dataset power-plant --config configs/uci.yaml --likelihood heteroscedastic --method vi --n_epochs 1000 --lr 0.001 --lr_min 0.001 --optimizer Adam
+python run_uci_crispr_regression.py --seed 1 --dataset power-plant --config configs/uci.yaml --likelihood heteroscedastic --method map --head natural
