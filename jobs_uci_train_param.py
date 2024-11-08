@@ -77,9 +77,9 @@ for seed,lr,lr_min,lr_hyp,lr_hyp_min,batch_size,n_epochs in product(seeds,
                                                                 ):
     base_cmd = f"python run_uci_trainparam.py --seed {seed} " + \
                 f"--dataset {dataset} --config configs/uci.yaml " +\
-                f"--lr {lr} --lr_min {lr_min}" +\
-                f"--lr_hyp {lr_hyp} --lr_hyp_min {lr_hyp_min}" +\
-                f"--batch_size {batch_size} --n_epochs {n_epochs}"
+                f"--lr {lr} --lr_min {lr_min} " +\
+                f"--lr_hyp {lr_hyp} --lr_hyp_min {lr_hyp_min} " +\
+                f"--batch_size {batch_size} --n_epochs {n_epochs} "
     
     # Proposed Laplace approximation
     for head in heads:

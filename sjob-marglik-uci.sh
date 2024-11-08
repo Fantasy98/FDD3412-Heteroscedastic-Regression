@@ -7,8 +7,8 @@
 #SBATCH -t 7-00:00:00
 #SBATCH --mail-type=ALL
 #SBATCH --mail-user=yuningw@kth.se
-#SBATCH --output logs/UCI-log.out
-#SBATCH --error  logs/UCI-err.error
+#SBATCH --output logs/UCI-MARGLIK-log.out
+#SBATCH --error  logs/UCI-MARGLIK-err.error
 
 
 ENV_NAME="/mimer/NOBACKUP/groups/kthmech/yuningw/bnn"
