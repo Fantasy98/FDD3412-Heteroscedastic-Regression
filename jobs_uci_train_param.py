@@ -5,7 +5,7 @@ from itertools import product
 # Path to the restart file and executed commands file
 # Define a function to check if a command was already executed
 def use_command(command):
-    restart_file = 'restart-architecture-uci.dat'
+    restart_file = 'restart-train-param-uci.dat'
     # Load previously executed commands from restart_file if it exists
     if os.path.exists(restart_file):
         with open(restart_file, 'r') as f:
@@ -19,16 +19,13 @@ def use_command(command):
     if command in executed_commands:
         print(f"Skipping already executed command: {command}")
         return False  # Command was found, so skip it
-    
     # Command was not executed, so execute it and record it
     print(f"Executing command: {command}")
     # Uncomment the following line to actually execute
     # os.system(command)
-
     # Record command as executed by appending it to the file
     with open(restart_file, 'a') as f:
         f.write(command + '\n')
-    
     return True  # Command was new, so execute it
 
 def run_program(base_cmd, args):
@@ -52,23 +49,38 @@ UCI_DATASETS = [
 
 # FIXED 
 #----------------------------
-seeds = [6,11]
+seeds = [6]
 dataset='wine-quality-red'          # REASON: Dataset with the highest noisy levels 
 heads = ['natural', 'meanvar']
 #----------------------------
 
 # HYPER-PARAM
 #----------------------------
-widths=[25,50,75]                   # Origin=50
-depths=[1,2,3]                      # Origin=1
-activations=['gelu','selu','silu'] # Origin gelu
+lrs          = [1e-3,1e-2,1e-1]         # Default=1e-2
+lr_mins      = [1e-6,1e-5,1e-4]         # Default=1e-5
+lr_hyps      = [1e-3,1e-2,1e-1]         # Default=1e-2
+lr_hyp_mins  = [1e-4,1e-3,1e-2]         # Default=1e-3
+lr_hyps      = [1e-3,1e-2,1e-1]         # Default=1e-2
+lr_hyp_mins  = [1e-4,1e-3,1e-2]         # Default=1e-3
+batch_sizes  = [128,256,512]            # Default=256
+n_epochss    = [5000]         # Default=5000
 #----------------------------
 
 icount = 0
-for seed, width, depth,activation in product(seeds,widths,depths,activations):
-    base_cmd = f"python run_uci_architectures.py --seed {seed} " + \
+for seed,lr,lr_min,lr_hyp,lr_hyp_min,batch_size,n_epochs in product(seeds,
+                                                                lrs,
+                                                                lr_mins,
+                                                                lr_hyps,
+                                                                lr_hyp_mins,
+                                                                batch_sizes,
+                                                                n_epochss,
+                                                                ):
+    base_cmd = f"python run_uci_trainparam.py --seed {seed} " + \
                 f"--dataset {dataset} --config configs/uci.yaml " +\
-                f"--width {width} --depth {depth} --activation {activation}"
+                f"--lr {lr} --lr_min {lr_min}" +\
+                f"--lr_hyp {lr_hyp} --lr_hyp_min {lr_hyp_min}" +\
+                f"--batch_size {batch_size} --n_epochs {n_epochs}"
+    
     # Proposed Laplace approximation
     for head in heads:
         # print(base_cmd, f'--likelihood heteroscedastic --method map --head {head}')
@@ -77,5 +89,4 @@ for seed, width, depth,activation in product(seeds,widths,depths,activations):
         run_program(base_cmd, f'--likelihood heteroscedastic --method marglik --head {head}')
         icount +=1 
 print(f'[SUMMARY] NCASE={icount}')
-
 

@@ -420,3 +420,4 @@ python run_uci_crispr_regression.py --seed 3 --dataset energy --config configs/u
 python run_uci_crispr_regression.py --seed 3 --dataset energy --config configs/uci.yaml --likelihood heteroscedastic --method marglik --head meanvar
 python run_uci_crispr_regression.py --seed 3 --dataset kin8nm --config configs/uci.yaml --likelihood homoscedastic --method map
 python run_uci_crispr_regression.py --seed 3 --dataset kin8nm --config configs/uci.yaml --likelihood homoscedastic --method marglik
+python run_uci_crispr_regression.py --seed 3 --dataset kin8nm --config configs/uci.yaml --likelihood heteroscedastic --method faithful --head gaussian

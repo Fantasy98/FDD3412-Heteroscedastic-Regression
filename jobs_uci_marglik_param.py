@@ -5,7 +5,7 @@ from itertools import product
 # Path to the restart file and executed commands file
 # Define a function to check if a command was already executed
 def use_command(command):
-    restart_file = 'restart-architecture-uci.dat'
+    restart_file = 'restart-marglik-param-uci.dat'
     # Load previously executed commands from restart_file if it exists
     if os.path.exists(restart_file):
         with open(restart_file, 'r') as f:
@@ -19,16 +19,13 @@ def use_command(command):
     if command in executed_commands:
         print(f"Skipping already executed command: {command}")
         return False  # Command was found, so skip it
-    
     # Command was not executed, so execute it and record it
     print(f"Executing command: {command}")
     # Uncomment the following line to actually execute
     # os.system(command)
-
     # Record command as executed by appending it to the file
     with open(restart_file, 'a') as f:
         f.write(command + '\n')
-    
     return True  # Command was new, so execute it
 
 def run_program(base_cmd, args):
@@ -59,16 +56,22 @@ heads = ['natural', 'meanvar']
 
 # HYPER-PARAM
 #----------------------------
-widths=[25,50,75]                   # Origin=50
-depths=[1,2,3]                      # Origin=1
-activations=['gelu','selu','silu'] # Origin gelu
+marglik_frequencys =[25,50,100,150]             # Default=50
+n_hyperstepses  = [25,50,100,150]               # Default=50
+approxs = ['full','kron','diag','kernel']   # Default=full
 #----------------------------
 
 icount = 0
-for seed, width, depth,activation in product(seeds,widths,depths,activations):
-    base_cmd = f"python run_uci_architectures.py --seed {seed} " + \
+for seed,marglik_frequency,n_hypersteps,approx in product(seeds,
+                                                                marglik_frequencys,
+                                                                n_hyperstepses,
+                                                                approxs):
+    base_cmd = f"python run_uci_margliks.py --seed {seed} " + \
                 f"--dataset {dataset} --config configs/uci.yaml " +\
-                f"--width {width} --depth {depth} --activation {activation}"
+                f"--marglik_frequency {marglik_frequency} " +\
+                f"--n_hypersteps {n_hypersteps} " +\
+                f"--approx {approx}"
+    
     # Proposed Laplace approximation
     for head in heads:
         # print(base_cmd, f'--likelihood heteroscedastic --method map --head {head}')
@@ -77,5 +80,4 @@ for seed, width, depth,activation in product(seeds,widths,depths,activations):
         run_program(base_cmd, f'--likelihood heteroscedastic --method marglik --head {head}')
         icount +=1 
 print(f'[SUMMARY] NCASE={icount}')
-
 

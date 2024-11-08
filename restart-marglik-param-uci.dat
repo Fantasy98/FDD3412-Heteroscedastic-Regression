@@ -1,0 +1,1 @@
+python run_uci_margliks.py --seed 6 --dataset wine-quality-red --config configs/uci.yaml --marglik_frequency 25 --n_hypersteps 25 --approx full --likelihood heteroscedastic --method map --head natural
