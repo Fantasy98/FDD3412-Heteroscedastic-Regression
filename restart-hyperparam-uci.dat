@@ -1,0 +1,4 @@
+python run_uci_architectures.py --seed 6 --dataset wine-quality-red --config configs/uci.yaml --width 25 --depth 1 --activation gelu --likelihood heteroscedastic --method map --head natural
+python run_uci_architectures.py --seed 6 --dataset wine-quality-red --config configs/uci.yaml --width 25 --depth 1 --activation gelu --likelihood heteroscedastic --method map --head meanvar
+python run_uci_architectures.py --seed 6 --dataset wine-quality-red --config configs/uci.yaml --width 25 --depth 1 --activation selu --likelihood heteroscedastic --method map --head natural
+python run_uci_architectures.py --seed 6 --dataset wine-quality-red --config configs/uci.yaml --width 25 --depth 1 --activation selu --likelihood heteroscedastic --method map --head meanvar

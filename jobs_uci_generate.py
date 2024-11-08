@@ -50,10 +50,13 @@ UCI_DATASETS = [
     'power-plant', 'wine-quality-red', 'yacht'
 ]
 
+# ORIGINAL:
 # seeds = [seed for seed in range(1, 21)]
+
 # YW: Reduce the n_seed to use 
-seeds = [seed for seed in range(1, 21, 5)]
-# NOTE: n_case * n_data * n_seed = 11 * 8 * 4 = 352!
+# seeds = [seed for seed in range(1, 21, 5)]
+# YW: New More seeds NOV8
+seeds = [seed for seed in range(3, 23, 5)]
 print(f"[JOB] SEED LIST:{seeds}")
 heads = ['natural', 'meanvar']
 for seed, dataset in product(seeds, UCI_DATASETS):
