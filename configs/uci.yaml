@@ -9,7 +9,7 @@ activation: gelu
 head_activation: softplus
 prior_prec_init: 1.0
 approx: full
-device: cuda
+device: cpu
 double: True
 lr_hyp: 1e-2
 lr_hyp_min: 1e-3
