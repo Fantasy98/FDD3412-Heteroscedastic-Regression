@@ -73,7 +73,10 @@ for jl, dataset in enumerate(CRISPR):
 
   # Add labels and title
   axs.set_yticks(range(1, len(plot_data['data']) + 1))
-  axs.set_yticklabels(plot_data['name'])
+  if jl==0:
+    axs.set_yticklabels(plot_data['name'])
+  else:
+    axs.set_yticklabels([])
   axs.set_xlabel("LL")
   axs.set_title(dataset)
 
