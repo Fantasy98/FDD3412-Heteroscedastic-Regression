@@ -77,7 +77,7 @@ for jl, dataset in enumerate(CRISPR):
   axs.set_xlabel("LL")
   axs.set_title(dataset)
 
-  fig.savefig(f'figs/02-CRIPR-BAR-{dataset}.pdf',bbox_inches='tight',dpi=300)
+  fig.savefig(f'figs/02-CRIPR-BAR-{dataset}.jpg',bbox_inches='tight',dpi=300)
 
 
 
