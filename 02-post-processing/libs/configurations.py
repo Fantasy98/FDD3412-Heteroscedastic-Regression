@@ -4,6 +4,8 @@ Configuration of training model
 """
 
 UCI = ['boston-housing', 'concrete', 'energy', 'kin8nm', 'naval-propulsion-plant', 'power-plant', 'wine-quality-red', 'yacht']
+CRISPR = ['flow-cytometry-HEK293','survival-screen-A375','survival-screen-HEK293']
+IMAGE_REG = ['mnist','fmnist','cifar10']
 
 model_configs={
             'homo':{

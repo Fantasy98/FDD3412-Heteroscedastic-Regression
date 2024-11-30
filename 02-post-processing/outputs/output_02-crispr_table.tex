@@ -1,0 +1,24 @@
+\begin{table}
+\centering
+\caption{Performance of Methods on Various Datasets}
+\label{tab:results}
+\begin{tabular}{|l|l|l|c|c|c|c|c|c|c|c|c|c|}
+\toprule
+        Objective & Regularization & Posterior Predictive & flow-cytometry-HEK293 & survival-screen-A375 & survival-screen-HEK293 \\
+\midrule
+    Homoscedastic &             EB &                    Y &          -3.52 (1.30) &         -2.16 (0.23) &           -2.22 (1.17) \\
+        Naive NLL &             GS &                    N &          -0.34 (0.01) &         -0.23 (0.01) &           -0.18 (0.02) \\
+$\beta$-NLL (0.5) &             GS &                    N &          -0.39 (0.01) &         -0.23 (0.01) &           -0.23 (0.01) \\
+$\beta$-NLL (1.0) &             GS &                    N &          -0.41 (0.02) &         -0.24 (0.01) &           -0.25 (0.04) \\
+         Faithful &             GS &                    N &          -0.39 (0.05) &         -0.27 (0.01) &           -0.29 (0.02) \\
+       MC-Dropout &             GS &                    N &             nan (nan) &            nan (nan) &              nan (nan) \\
+               VI &             GS &                    N &          -0.40 (0.03) &         -0.26 (0.01) &           -0.26 (0.03) \\
+        Naive NLL &             EB &                    Y &          -1.38 (0.15) &         -0.59 (0.19) &           -1.80 (1.23) \\
+        Naive NLL &             EB &                    N &          -2.89 (0.20) &         -1.23 (0.51) &           -1.70 (0.17) \\
+      Natural NLL &             GS &                    Y &          -0.24 (0.05) &         -0.25 (0.01) &           -0.13 (0.02) \\
+      Natural NLL &             GS &                    N &          -0.32 (0.07) &         -0.25 (0.01) &           -0.18 (0.03) \\
+      Natural NLL &             EB &                    Y &          -0.24 (0.06) &         -0.42 (0.02) &           -0.18 (0.05) \\
+      Natural NLL &             EB &                    N &          -0.35 (0.09) &         -0.55 (0.04) &           -0.33 (0.06) \\
+\bottomrule
+\end{tabular}
+\end{table}
