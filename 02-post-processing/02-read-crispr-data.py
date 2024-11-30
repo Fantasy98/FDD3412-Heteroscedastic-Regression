@@ -59,6 +59,7 @@ for jl, dataset in enumerate(CRISPR):
 
   plot_data['data'].reverse()
   plot_data['name'].reverse()
+  
   fig, axs = plt.subplots(1,1,figsize=(6,8))
   bplot = axs.boxplot(
     plot_data['data'],
@@ -73,10 +74,7 @@ for jl, dataset in enumerate(CRISPR):
 
   # Add labels and title
   axs.set_yticks(range(1, len(plot_data['data']) + 1))
-  if jl==0:
-    axs.set_yticklabels(plot_data['name'])
-  else:
-    axs.set_yticklabels([])
+  axs.set_yticklabels(plot_data['name'])
   axs.set_xlabel("LL")
   axs.set_title(dataset)
 
