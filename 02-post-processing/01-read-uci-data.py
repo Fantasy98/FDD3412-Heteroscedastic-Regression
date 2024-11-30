@@ -14,13 +14,6 @@ data = pd.read_csv(os.path.join(database,filename))
 finished_data = data[data['State'] == 'finished']
 print(f"[IO] JOB {len(finished_data)}/{len(data)} SORTED")
 
-def get_mean_std(dt):
-    """Calculate the Mean and Std of the results"""
-    s = []
-    for col in dt.columns:
-        s.append((np.mean(dt[col].to_numpy()), np.std(dt[col].to_numpy())))
-    return s
-
 # Initialize DataFrame
 table_updated = pd.DataFrame(columns=["Objective", "Regularization", "Posterior Predictive"] + UCI)
 

@@ -19,7 +19,6 @@ data = pd.read_csv(os.path.join(database,filename))
 finished_data = data[data['State'] == 'finished']
 print(f"[IO] JOB {len(finished_data)}/{len(data)} SORTED")
 
-
 Methods = ['neither','label','rotation']
 metrics = ["test/rmse","test/kl_div"]
 
