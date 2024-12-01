@@ -20,8 +20,8 @@ model_configs={
                   },
             
             'naive_gs':{
-                    'likelihood':"heteroscedastic",
-                    'head':"meanvar",
+                    'likelihood':"homoscedastic",
+                    'head':"natural",
                     'method':"map",
                     'name':'Naive NLL',
                     'label':'Navie NLL',
@@ -100,7 +100,7 @@ model_configs={
             'naive_eb':{
                     'likelihood':"heteroscedastic",
                     'head':"meanvar",
-                    'method':"marglik",
+                    'method':"map",
                     'name':'Naive NLL',
                     'label':'Naive NLL | EB ',
                     'regularization':'EB',

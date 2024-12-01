@@ -19,6 +19,7 @@ data = pd.read_csv(os.path.join(database,filename))
 finished_data = data[data['State'] == 'finished']
 print(f"[IO] JOB {len(finished_data)}/{len(data)} SORTED")
 
+del model_configs['mcdropout']
 
 # Initialize DataFrame
 table_updated = pd.DataFrame(columns=["Objective", "Regularization", "Posterior Predictive"] + CRISPR)
