@@ -56,6 +56,7 @@ for method in Methods:
             
             for kl, metric in enumerate(metrics):
                 result_arrary=data[metric].to_numpy() 
+                result_arrary = result_arrary[np.where(result_arrary < 1000.0)]
                 result_arrary_mean = result_arrary.mean()
                 result_arrary_std  = result_arrary.std()
                 table_updated.loc[il,dataset+ "-" +metric]=f"{result_arrary_mean:.2f} ({result_arrary_std:.2f})"

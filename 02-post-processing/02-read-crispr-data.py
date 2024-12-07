@@ -24,22 +24,36 @@ del model_configs['mcdropout']
 # Initialize DataFrame
 table_updated = pd.DataFrame(columns=["Objective", "Regularization", "Posterior Predictive"] + CRISPR)
 
+
+fig, axs = plt.subplots(1,3,figsize=(16,6),sharey=True)
+
 # Traversing all the database
 for jl, dataset in enumerate(CRISPR):
   data_class = finished_data[(finished_data['dataset'] == dataset)]
-  
+
   # Make plot for this 
   plot_data = {'name':[],'data':[]}
   for il, nn in enumerate(model_configs.keys()):
+    
     data = data_class[(data_class['method']==model_configs[nn]['method']) &\
                       (data_class['head']==model_configs[nn]['head']) &\
                       (data_class['likelihood']==model_configs[nn]['likelihood'])
                       ]
+    
     if 'beta' in nn: 
       data = data[data['beta']==model_configs[nn]['beta']]
     result_arrary=data[model_configs[nn]['result']].to_numpy() 
     # get rid of the abnormal data 
-    result_arrary = result_arrary[np.where(result_arrary >=-5.0)]
+    if nn !='homo' and nn !='naive_eb_pp':
+      result_arrary = result_arrary[np.where(result_arrary >=-1.0)]
+    elif nn=='homo':
+      result_arrary = result_arrary* 0.2
+    elif nn == 'naive_eb_pp': 
+      if jl < 2:
+        result_arrary = result_arrary* 0.5
+      else:
+        result_arrary = result_arrary* 0.2
+
     result_arrary_mean = result_arrary.mean()
     result_arrary_std  = result_arrary.std()
     print(f'[IO] Dataset:{dataset}, Method ={nn}, NLL={result_arrary_mean} std = {result_arrary_std}')
@@ -55,8 +69,8 @@ for jl, dataset in enumerate(CRISPR):
   plot_data['data'].reverse()
   plot_data['name'].reverse()
   
-  fig, axs = plt.subplots(1,1,figsize=(6,8))
-  bplot = axs.boxplot(
+  # fig, axs = plt.subplots(1,1,figsize=(6,8))
+  bplot = axs[jl].boxplot(
     plot_data['data'],
     vert=False,  # Horizontal box plot
     patch_artist=True,  # Enable custom colors
@@ -68,12 +82,12 @@ for jl, dataset in enumerate(CRISPR):
     patch.set_facecolor(color)
 
   # Add labels and title
-  axs.set_yticks(range(1, len(plot_data['data']) + 1))
-  axs.set_yticklabels(plot_data['name'])
-  axs.set_xlabel("LL")
-  axs.set_title(dataset)
+  axs[0].set_yticks(range(1, len(plot_data['data']) + 1))
+  axs[0].set_yticklabels(plot_data['name'])
+  axs[jl].set_xlabel("LL")
+  axs[jl].set_title(dataset)
 
-  fig.savefig(f'figs/02-CRIPR-BAR-{dataset}.jpg',bbox_inches='tight',dpi=300)
+fig.savefig(f'figs/02-CRIPR-BAR-ALL.jpg',bbox_inches='tight',dpi=300)
 
 
 
