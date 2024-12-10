@@ -1,11 +1,11 @@
-[![Venue](https://img.shields.io/badge/venue-NeurIPS_2023-darkblue)](https://openreview.net/forum?id=A6EquH0enk)
+<!-- [![Venue](https://img.shields.io/badge/venue-NeurIPS_2023-darkblue)](https://openreview.net/forum?id=A6EquH0enk) -->
 
 # Effective Bayesian Heteroscedastic Regression with Deep Neural Networks
 
-This repository contains the accompanying code for the paper "Effective Bayesian Heteroscedastic Regression with Deep Neural Networks" published at NeurIPS 2023.
+This repository contains the reimplemented code for the paper "Effective Bayesian Heteroscedastic Regression with Deep Neural Networks" published at NeurIPS 2023.
 The PDF is available [here](https://openreview.net/pdf?id=A6EquH0enk).
 
-![illustration](https://github.com/aleximmer/heteroscedastic-nn/assets/7715036/1a2f2cb3-1b1c-4523-87c2-bca7a3521c78)
+![illustration](./resources/illustration_YW.pdf)
 
 ## Setup
 For experiments, we used python version 3.9 and torch version 1.12.1.
