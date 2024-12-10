@@ -12,7 +12,7 @@ The PDF is available [here](https://openreview.net/pdf?id=A6EquH0enk).
 For experiments, we used `python>=3.9` and `torch==1.12.1`.
 Additional online dependencies are listed in `requirements.txt` and have to be installed with `pip install -r requirements.txt`.
 ### Modified packages
-`dependencies/` contain modified versions of [`laplace-torch`](https://github.com/aleximmer/Laplace) and [`asdl`](https://github.com/kazukiosawa/asdl) and have to be installed with `pip install -e dependencies/laplace` and `pip install -e dependencies/asdl`.
+[`./dependencies/`](./dependencies/) contain modified versions of [`laplace-torch`](https://github.com/aleximmer/Laplace) and [`asdl`](https://github.com/kazukiosawa/asdl) and have to be installed with `pip install -e dependencies/laplace` and `pip install -e dependencies/asdl`.
 To install local utilities, run `pip install -e .` in the root directory of this repository.
 
 ## Example Usage
