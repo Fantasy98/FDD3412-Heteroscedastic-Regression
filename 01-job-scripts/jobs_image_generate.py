@@ -21,9 +21,9 @@ def use_command(command):
         return False  # Command was found, so skip it
     
     # Command was not executed, so execute it and record it
-    print(f"Executing command: {command}")
+    # print(f"Executing command: {command}")
     # Uncomment the following line to actually execute
-    # os.system(command)
+    os.system(command)
 
     # Record command as executed by appending it to the file
     with open(restart_file, 'a') as f:
